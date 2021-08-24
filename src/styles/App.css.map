@@ -5,7 +5,10 @@
         "App.scss",
         "_variable.scss",
         "_mixins.scss",
-        "_global.scss"
+        "_global.scss",
+        "../Components/Nav/_nav.scss",
+        "../Components/Footer/_footer.scss",
+        "../Components/Landing/_landing.scss"
     ],
     "names": [],
     "file": "App.css"

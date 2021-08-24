@@ -24,3 +24,16 @@ $breakpoints-down: (
         @content;
     }
 }
+
+//button basic
+
+@mixin button-basic($py, $px, $bg) {
+    background-color: $bg;
+    outline: none;
+    cursor: pointer;
+    padding: $py $px;
+    border: 1px solid rgba(182, 142, 92, 0.5);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
