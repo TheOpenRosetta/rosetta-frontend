@@ -1,0 +1,9 @@
+.paper {
+    > div {
+        background-color: red;
+        display: flex;
+        img {
+            object-fit: contain;
+        }
+    }
+}
