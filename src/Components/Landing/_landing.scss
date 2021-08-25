@@ -1,4 +1,5 @@
 .hero {
+    position: relative;
     background-color: $dark-bg;
     min-height: 80vh;
     display: flex;
@@ -48,5 +49,39 @@
                 font-size: 14px !important;
             }
         }
+    }
+    .graph__stats{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        position: absolute;
+        width: 110px;
+        height: 257px;
+        top: 0;
+        transform: translateY(50%);
+        right: 0;
+        background: #24272C;
+        border-radius: 5px;
+        .graph__stats__body{
+            > span{
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 16px;
+            margin-bottom: 17px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            opacity: 0.8;
+            }
+            > h5{
+                font-weight: 500;
+                font-size: 20px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+        
+        
+        
     }
 }
