@@ -1,0 +1,52 @@
+.hero {
+    background-color: $dark-bg;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    > div {
+        text-align: center;
+        padding: 150px 0px;
+
+        > p {
+            &:nth-of-type(1) {
+                font-size: 28px;
+            }
+            &:nth-of-type(2) {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 14px;
+                margin: 30px 0px;
+                margin-bottom: 70px;
+            }
+        }
+        h1 {
+            font-size: 52px;
+            font-weight: 400;
+            max-width: 650px;
+            text-align: center;
+            margin: 0px auto;
+        }
+        form {
+            display: flex;
+            background-color: white;
+            max-width: 500px;
+            margin: 20px auto;
+            border: 1px solid #ffffff;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 5px 5px;
+            > input {
+                flex: 1;
+                outline: none;
+                border: none;
+                padding-left: 10px;
+            }
+            > button {
+                @include button-basic(99px, 40px, $theme-color, "white");
+                color: white !important;
+                font-size: 14px !important;
+            }
+        }
+    }
+}

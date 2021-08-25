@@ -17,4 +17,111 @@ body {
   padding: 0px;
   margin: 0px;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.nav {
+  background-color: #131416;
+}
+
+.nav > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.nav > div > button {
+  background: none;
+  outline: none;
+  cursor: pointer;
+  width: 172px;
+  height: 54px;
+  border: 1px solid rgba(182, 142, 92, 0.5);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #b68e5c;
+}
+
+.hero {
+  background-color: #131416;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.hero > div {
+  text-align: center;
+  padding: 150px 0px;
+}
+
+.hero > div > p:nth-of-type(1) {
+  font-size: 28px;
+}
+
+.hero > div > p:nth-of-type(2) {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 14px;
+  margin: 30px 0px;
+  margin-bottom: 70px;
+}
+
+.hero > div h1 {
+  font-size: 52px;
+  font-weight: 400;
+  max-width: 650px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.hero > div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  max-width: 500px;
+  margin: 20px auto;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+
+.hero > div form > input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+}
+
+.hero > div form > button {
+  background: #b68e5c;
+  outline: none;
+  cursor: pointer;
+  width: 99px;
+  height: 40px;
+  border: 1px solid rgba(182, 142, 92, 0.5);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: "white";
+  color: white !important;
+  font-size: 14px !important;
+}
 /*# sourceMappingURL=App.css.map */

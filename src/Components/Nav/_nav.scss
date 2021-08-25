@@ -1,0 +1,11 @@
+.nav {
+    background-color: $dark-bg;
+    > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+        > button {
+            @include button-basic(172px, 54px, none, $theme-color);
+        }
+    }
+}

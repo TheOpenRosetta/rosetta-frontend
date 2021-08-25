@@ -27,13 +27,15 @@ $breakpoints-down: (
 
 //button basic
 
-@mixin button-basic($py, $px, $bg) {
-    background-color: $bg;
+@mixin button-basic($wid, $hei, $bg, $color) {
+    background: $bg;
     outline: none;
     cursor: pointer;
-    padding: $py $px;
+    width: $wid;
+    height: $hei;
     border: 1px solid rgba(182, 142, 92, 0.5);
     border-radius: 8px;
     font-weight: 500;
     font-size: 16px;
+    color: $color;
 }
