@@ -163,7 +163,7 @@ body {
 .feature__bottom > div:nth-of-type(1) > p {
   color: #000000;
   font-weight: 500;
-  font-size: 42px;
+  font-size: 35px;
   line-height: 50px;
 }
 
@@ -248,7 +248,7 @@ body {
 .works > div:nth-of-type(1) > p {
   color: #000000;
   font-weight: 500;
-  font-size: 42px;
+  font-size: 35px;
   line-height: 50px;
 }
 
@@ -266,5 +266,99 @@ body {
   line-height: 26px;
   max-width: 650px;
   margin: 0px auto;
+}
+
+.works__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 80px 0px;
+  gap: 40px;
+}
+
+.works__grid > div > div {
+  min-height: 130px;
+}
+
+.works__grid > div p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.004em;
+  opacity: 0.7;
+}
+
+.works__grid > div p:nth-of-type(1) {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.programmable > div:nth-of-type(1) {
+  text-align: center;
+}
+
+.programmable > div:nth-of-type(1) > p {
+  color: #000000;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.programmable > div:nth-of-type(1) > p:nth-of-type(2) {
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 35px;
+  margin-bottom: 28px;
+}
+
+.programmable > div:nth-of-type(1) > p:nth-of-type(3) {
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 650px;
+  margin: 0px auto;
+}
+
+.programmable__grid {
+  max-height: 700px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.programmable__grid > div:nth-of-type(1) img {
+  position: relative;
+  left: -100px;
+}
+
+.programmable__grid > div:nth-of-type(2) {
+  margin-top: 120px;
+}
+
+.programmable__grid > div:nth-of-type(2) > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px;
+}
+
+.programmable__grid > div:nth-of-type(2) > p > span {
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 160% */
+  letter-spacing: 0.004em;
+  color: #000000;
+}
+
+.programmable__grid > div:nth-of-type(2) > p > img {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=App.css.map */

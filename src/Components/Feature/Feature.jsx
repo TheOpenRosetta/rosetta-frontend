@@ -35,7 +35,10 @@ const Feature = () => {
                     <div>
                         <div>
                             <span>
-                                <img src={ring} alt="" />
+                                <img
+                                    src={ring}
+                                    alt="BYE BYE, REPLICATION CRISIS"
+                                />
                                 BYE BYE, REPLICATION CRISIS
                             </span>
                             <p>
@@ -47,26 +50,30 @@ const Feature = () => {
                         </div>
                         <div>
                             <span>
-                                <img src={ring} alt="" />
-                                BYE BYE, REPLICATION CRISIS
+                                <img
+                                    src={fraud}
+                                    alt="BYE BYE, ACADEMIC FRAUD"
+                                />
+                                BYE BYE, ACADEMIC FRAUD
                             </span>
                             <p>
-                                A network of reputable peers compete to
-                                replicate research over time to earn rewards
-                                that ensures falsification occurs on our
-                                collective knowledge.{" "}
+                                When you publish your work you have to stake an
+                                amount of Rosetta tokens. This mechanism ensures
+                                if fraud is found by validators there is a cost
+                                for the author.
                             </p>
                         </div>
                         <div>
                             <span>
-                                <img src={ring} alt="" />
-                                BYE BYE, REPLICATION CRISIS
+                                <img
+                                    src={premium}
+                                    alt="HELLO, AUTHORS FINALLY EARNING REWARDS"
+                                />
+                                HELLO, AUTHORS FINALLY EARNING REWARDS
                             </span>
                             <p>
-                                A network of reputable peers compete to
-                                replicate research over time to earn rewards
-                                that ensures falsification occurs on our
-                                collective knowledge.{" "}
+                                Authors earn rewards for the first time by
+                                publishing replicable quality papers.
                             </p>
                         </div>
                         <button>Read the rosetta whitepaper</button>

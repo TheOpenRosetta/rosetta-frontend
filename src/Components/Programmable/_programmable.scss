@@ -1,0 +1,60 @@
+.programmable {
+    > div:nth-of-type(1) {
+        text-align: center;
+
+        > p {
+            color: #000000;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 50px;
+            &:nth-of-type(2) {
+                opacity: 0.7;
+                font-weight: 300;
+                font-size: 35px;
+                margin-bottom: 28px;
+            }
+            &:nth-of-type(3) {
+                opacity: 0.7;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 26px;
+                max-width: 650px;
+                margin: 0px auto;
+            }
+        }
+    }
+
+    &__grid {
+        max-height: 700px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        > div:nth-of-type(1) {
+            img {
+                position: relative;
+                left: -100px;
+            }
+        }
+        > div:nth-of-type(2) {
+            margin-top: 120px;
+            > p {
+                display: flex;
+                align-items: center;
+                margin: 20px 0px;
+                > span {
+                    opacity: 0.7;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 26px;
+                    /* or 160% */
+
+                    letter-spacing: 0.004em;
+
+                    color: #000000;
+                }
+                > img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
