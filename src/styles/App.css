@@ -145,30 +145,36 @@ body {
   position: absolute;
   width: 110px;
   height: 257px;
-  top: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  right: 0;
-  background: #24272C;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0px;
+  background: #24272c;
   border-radius: 5px;
 }
 
-.hero .graph__stats .graph__stats__body > span {
+.hero .graph__stats .graph__stats__body {
+  height: 257px;
+}
+
+.hero .graph__stats .graph__stats__body span {
   font-weight: 500;
   font-size: 11px;
-  line-height: 16px;
-  margin-bottom: 17px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
 }
 
-.hero .graph__stats .graph__stats__body > h5 {
+.hero .graph__stats .graph__stats__body > div {
+  margin: 15px 0px;
+}
+
+.hero .graph__stats .graph__stats__body h5 {
   font-weight: 500;
   font-size: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .paper > div {

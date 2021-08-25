@@ -21,19 +21,30 @@ const Landing = () => {
                 <small>
                     Over 271+ Million Authors profiles & rewards ready to be
                     claimed on our network
-                </small>   
+                </small>
             </div>
             <div className="graph__stats">
                 <div className="graph__stats__body">
-                    <span> Our<br/> Knowledge<br/> Graph Stats </span>
-                    <h5> 271m+ </h5>
-                    <span> Authors </span>
-                    <h5> 136m+ </h5>
-                    <span> Papers </span>
-                    <h5> 1.8bn+ </h5>
-                    <span> Citations </span>
+                    <span>
+                        {" "}
+                        Our
+                        <br /> Knowledge
+                        <br /> Graph Stats{" "}
+                    </span>
+                    <br />
+                    <div>
+                        <h5> 271m+ </h5>
+                        <span> Authors </span>
+                    </div>
+                    <div>
+                        <h5> 136m+ </h5>
+                        <span> Papers </span>
+                    </div>
+                    <div>
+                        <h5> 1.8bn+ </h5>
+                        <span> Citations </span>
+                    </div>
                 </div>
-                
             </div>
         </section>
     );
