@@ -6,6 +6,7 @@ import Paper from "./Components/ResearchPaper/Paper.jsx";
 import Works from "./Components/Works/Works.jsx";
 import Footer from "./Components/Footer/Footer";
 import "./styles/App.css";
+import Discovery from "./Components/Discovery/Discovery.jsx";
 
 function App() {
     return (
@@ -16,7 +17,8 @@ function App() {
             <Feature></Feature>
             <Works></Works>
             <Programmable></Programmable>
-            <Footer/>
+            <Discovery></Discovery>
+            <Footer />
         </div>
     );
 }

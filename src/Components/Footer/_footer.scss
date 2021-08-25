@@ -1,3 +1,68 @@
-.footer{
+.footer {
     background-color: $dark-bg;
+    margin-top: 100px;
+    &__top {
+        > div {
+            padding: 100px 0px;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            color: white;
+        }
+    }
+    &__left {
+        h2 {
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 74px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            /* or 160% */
+
+            letter-spacing: 0.004em;
+
+            color: #ffffff;
+
+            opacity: 0.8;
+            max-width: 580px;
+            margin-top: 36px;
+            margin-bottom: 20px;
+        }
+        button {
+            @include button-basic(180px, 54px, $theme-color, white);
+            &:nth-of-type(2) {
+                background: none;
+                margin-left: 20px;
+            }
+        }
+    }
+    &__bottom {
+        color: white;
+        background: #0d0e0f;
+        padding: 70px 0px;
+        > div {
+            display: flex;
+            justify-content: space-between;
+            > div {
+                a {
+                    margin: 0px 10px;
+                    background: $theme-color;
+                    width: 43px;
+                    height: 43px;
+                    padding: 10px;
+                    border-radius: 50%;
+                    text-align: center;
+                    > img {
+                        width: 19.65px;
+                        height: 15.96px;
+                    }
+                }
+            }
+        }
+        small {
+            opacity: 0.7;
+        }
+    }
 }

@@ -1,6 +1,7 @@
-.works {
+.discovery {
     > div:nth-of-type(1) {
         text-align: center;
+
         > p {
             color: #000000;
             font-weight: 500;
@@ -23,28 +24,28 @@
         }
     }
     &__grid {
+        max-height: 700px;
         display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 50px 0px;
+        > div:nth-of-type(1) {
+            > p {
+                display: flex;
+                align-items: center;
+                margin: 20px 0px;
+                > span {
+                    opacity: 0.7;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 26px;
+                    /* or 160% */
 
-        grid-template-columns: 1fr 1fr 1fr;
-        @include breakpoints-down(medium) {
-            grid-template-columns: 1fr;
-        }
-        padding: 80px 0px;
-        gap: 40px;
-        > div {
-            > div {
-                min-height: 130px;
-            }
+                    letter-spacing: 0.004em;
 
-            p {
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 26px;
-                letter-spacing: 0.004em;
-                opacity: 0.7;
-                &:nth-of-type(1) {
-                    font-weight: 500;
-                    margin-bottom: 20px;
+                    color: #000000;
+                }
+                > img {
+                    margin-right: 10px;
                 }
             }
         }
