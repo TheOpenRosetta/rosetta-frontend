@@ -24,13 +24,16 @@ const Landing = () => {
                 </small>   
             </div>
             <div className="graph__stats">
-                <span> Our<br/> Knowledge<br/> Graph Stats </span>
-                <h5> 271m+ </h5>
-                <span> Authors </span>
-                <h5> 136m+ </h5>
-                <span> Papers </span>
-                <h5> 1.8bn+ </h5>
-                <span> Citations </span>
+                <div className="graph__stats__body">
+                    <span> Our<br/> Knowledge<br/> Graph Stats </span>
+                    <h5> 271m+ </h5>
+                    <span> Authors </span>
+                    <h5> 136m+ </h5>
+                    <span> Papers </span>
+                    <h5> 1.8bn+ </h5>
+                    <span> Citations </span>
+                </div>
+                
             </div>
         </section>
     );

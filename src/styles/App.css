@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -16,6 +17,7 @@ html {
 body {
   padding: 0px;
   margin: 0px;
+  font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -50,7 +52,12 @@ body {
   color: #b68e5c;
 }
 
+.footer {
+  background-color: #131416;
+}
+
 .hero {
+  position: relative;
   background-color: #131416;
   min-height: 80vh;
   display: -webkit-box;
@@ -123,6 +130,45 @@ body {
   color: "white";
   color: white !important;
   font-size: 14px !important;
+}
+
+.hero .graph__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 110px;
+  height: 257px;
+  top: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0;
+  background: #24272C;
+  border-radius: 5px;
+}
+
+.hero .graph__stats .graph__stats__body > span {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  margin-bottom: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.hero .graph__stats .graph__stats__body > h5 {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .paper > div {

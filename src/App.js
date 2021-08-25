@@ -4,6 +4,7 @@ import Nav from "./Components/Nav/Nav.jsx";
 import Programmable from "./Components/Programmable/Programmable.jsx";
 import Paper from "./Components/ResearchPaper/Paper.jsx";
 import Works from "./Components/Works/Works.jsx";
+import Footer from "./Components/Footer/Footer";
 import "./styles/App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Feature></Feature>
             <Works></Works>
             <Programmable></Programmable>
+            <Footer/>
         </div>
     );
 }
