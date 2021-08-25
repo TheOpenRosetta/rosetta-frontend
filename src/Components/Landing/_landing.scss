@@ -1,4 +1,5 @@
 .hero {
+    position: relative;
     background-color: $dark-bg;
     min-height: 80vh;
     display: flex;
@@ -48,5 +49,13 @@
                 font-size: 14px !important;
             }
         }
+    }
+    .graph__stats{
+        position: absolute;
+        width: 110px;
+        top: 0;
+        left: 0;
+        background: #24272C;
+        border-radius: 5px;
     }
 }
