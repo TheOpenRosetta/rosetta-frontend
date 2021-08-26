@@ -1,9 +1,10 @@
 .paper {
+    max-height: 500px;
     > div {
-        background-color: red;
-        display: flex;
+        position: relative;
+        top: -100px;
         img {
-            object-fit: contain;
+            width: 100%;
         }
     }
 }

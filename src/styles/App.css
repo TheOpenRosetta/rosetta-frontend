@@ -264,20 +264,21 @@ body {
   color: #ffffff;
 }
 
+.paper {
+  max-height: 500px;
+}
+
 .paper > div {
-  background-color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+  top: -100px;
 }
 
 .paper > div img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
 }
 
 .feature > div {
-  padding: 50px 0px;
+  padding-bottom: 50px;
 }
 
 .feature > div > p {
