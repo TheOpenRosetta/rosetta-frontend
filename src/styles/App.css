@@ -623,4 +623,17 @@ body {
 .discovery__grid > div:nth-of-type(1) > p > img {
   margin-right: 10px;
 }
+
+.profileBody {
+  background-color: #131416;
+  min-height: 100vh;
+  color: white;
+  padding: 30px 0px;
+}
+
+.profileBody > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=App.css.map */
