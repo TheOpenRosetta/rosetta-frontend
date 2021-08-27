@@ -1,13 +1,21 @@
 .overview {
+    color: #efefef;
     > div {
         margin-bottom: 30px;
+        > p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #efefef;
+        }
     }
     > div:nth-of-type(1) {
         border-bottom: 1px solid #27292d;
         > button {
             background: none;
             border: none;
-            color: $theme-color;
+            color: $theme-light;
             font-weight: 500;
             font-size: 16px;
             width: 135px;
@@ -32,9 +40,35 @@
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 16px;
+    color: #efefef;
     > div {
         background: #1d1e22;
         border-radius: 8px;
         padding: 18px;
+
+        > div:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            > span {
+                margin-left: 10px;
+            }
+        }
+        > div:nth-of-type(2) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 15px;
+            > div {
+                display: flex;
+                align-items: center;
+                background-color: $light-bg;
+                padding: 8px;
+                border-radius: 8px;
+                > span {
+                    margin-left: 10px;
+                    color: $theme-light;
+                }
+            }
+        }
     }
 }

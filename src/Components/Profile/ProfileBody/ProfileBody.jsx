@@ -9,7 +9,11 @@ const ProfileBody = () => {
         <section className="profileBody">
             <div className="container">
                 <SideBar></SideBar>
-                {active === 1 ? <Overview></Overview> : <Papers></Papers>}
+                {active === 1 ? (
+                    <Overview setActive={setActive}></Overview>
+                ) : (
+                    <Papers setActive={setActive}></Papers>
+                )}
             </div>
         </section>
     );
