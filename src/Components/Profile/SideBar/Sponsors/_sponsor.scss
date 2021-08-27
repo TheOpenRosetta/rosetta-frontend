@@ -1,0 +1,19 @@
+.sponsors{
+    margin-top: 30px;
+    h3{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .content__wrapper{
+        display: flex;
+        justify-content: space-between;
+        .content{
+            width: 42.54px;
+            height: 42.54px;
+            background: $light-bg;
+            margin-top: 24px;
+            border-radius: 83.4197px;
+            align-items: center;
+        }
+    }
+}
