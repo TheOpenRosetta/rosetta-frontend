@@ -1,0 +1,40 @@
+.overview {
+    > div {
+        margin-bottom: 30px;
+    }
+    > div:nth-of-type(1) {
+        border-bottom: 1px solid #27292d;
+        > button {
+            background: none;
+            border: none;
+            color: $theme-color;
+            font-weight: 500;
+            font-size: 16px;
+            width: 135px;
+            height: 54px;
+            cursor: pointer;
+            &.active {
+                background: $light-bg !important;
+                border-bottom: 1px solid $theme-color;
+                border-radius: 8px 8px 0px 0px;
+            }
+        }
+    }
+}
+.profile__card {
+    background: #24272c;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.profile__popular__papers {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 16px;
+    > div {
+        background: #1d1e22;
+        border-radius: 8px;
+        padding: 18px;
+    }
+}
