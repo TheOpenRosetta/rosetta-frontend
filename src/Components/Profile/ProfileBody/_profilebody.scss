@@ -1,9 +1,18 @@
 .profileBody {
+
     background-color: $light-bg;
+
     min-height: 100vh;
     color: white;
     padding: 30px 0px;
     > div {
         display: flex;
+        > div:nth-of-type(2) {
+            background-color: $dark-bg;
+            flex: 1;
+            min-height: 100vh;
+            padding: 24px;
+            border-radius: 8px;
+        }
     }
 }

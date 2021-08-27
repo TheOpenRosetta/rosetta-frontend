@@ -625,7 +625,9 @@ body {
 }
 
 .profileBody {
+
   background-color: #24272C;
+
   min-height: 100vh;
   color: white;
   padding: 30px 0px;
@@ -636,6 +638,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+
 
 .side__bar {
   width: 370px;
@@ -869,5 +872,60 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
+.profileBody > div > div:nth-of-type(2) {
+  background-color: #131416;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 100vh;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.overview > div {
+  margin-bottom: 30px;
+}
+
+.overview > div:nth-of-type(1) {
+  border-bottom: 1px solid #27292d;
+}
+
+.overview > div:nth-of-type(1) > button {
+  background: none;
+  border: none;
+  color: #b68e5c;
+  font-weight: 500;
+  font-size: 16px;
+  width: 135px;
+  height: 54px;
+  cursor: pointer;
+}
+
+.overview > div:nth-of-type(1) > button.active {
+  background: #24272c !important;
+  border-bottom: 1px solid #b68e5c;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.profile__card {
+  background: #24272c;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.profile__popular__papers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  gap: 16px;
+}
+
+.profile__popular__papers > div {
+  background: #1d1e22;
+  border-radius: 8px;
+
 }
 /*# sourceMappingURL=App.css.map */
