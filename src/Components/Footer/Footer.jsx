@@ -2,6 +2,7 @@ import React from "react";
 import twitter from "../../images/twitter.svg";
 import facebook from "../../images/facebook.svg";
 import linkedin from "../../images/linkedin.svg";
+import card from "../../images/Cards@2x.png";
 const Footer = () => {
     return (
         <footer className="footer">
@@ -22,6 +23,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+                <img src={card} alt="" />
             </div>
             <div className="footer__bottom ">
                 <div className="container">

@@ -1,16 +1,20 @@
 import React from "react";
 import search from "../../images/search-normal.svg";
 const Landing = () => {
+    const handleForm = (e) => {
+        e.preventDefault();
+    };
     return (
         <section className="hero">
             <div className="container">
                 <p>Introducing Rosetta</p>
-                <h1>The open source protocol for truthful science</h1>
+                <h1>The new protocol for truthful open science</h1>
                 <p>
-                    Finally, publish open access with all your research outputs,
-                    and get rewarded on the new p2p social network.{" "}
+                    The new decentralised global P2P platform co-operative
+                    social network where authors finally own the rewards, and
+                    democratically manage the knowledge commons, together.
                 </p>
-                <form>
+                <form onSubmit={(e) => handleForm(e)}>
                     <img src={search} alt="" />
                     <input
                         type="text"

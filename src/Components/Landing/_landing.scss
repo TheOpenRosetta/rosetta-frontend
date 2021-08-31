@@ -7,7 +7,7 @@
     color: white;
     > div {
         text-align: center;
-        padding: 150px 0px;
+        padding: 120px 0px;
 
         > p {
             &:nth-of-type(1) {
@@ -15,18 +15,20 @@
             }
             &:nth-of-type(2) {
                 font-weight: 300;
-                font-size: 16px;
-                line-height: 14px;
+                font-size: 18px;
+                line-height: 20px;
                 margin: 30px 0px;
                 margin-bottom: 70px;
+                max-width: 650px;
             }
         }
         h1 {
-            font-size: 52px;
+            font-size: 62px;
             font-weight: 400;
             max-width: 650px;
             text-align: center;
             margin: 0px auto;
+            letter-spacing: 1px;
         }
         form {
             display: flex;
