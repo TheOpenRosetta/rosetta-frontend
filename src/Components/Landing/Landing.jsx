@@ -21,7 +21,7 @@ const Landing = () => {
         setResult(temp);
         if (name) {
             fetch(
-                `http://rosetta.eastus.cloudapp.azure.com/api/getauthors/${name}`
+                `https://rosetta.eastus.cloudapp.azure.com/api/getauthors/${name}`
             )
                 .then((response) => response.json())
                 .then((Data) =>
