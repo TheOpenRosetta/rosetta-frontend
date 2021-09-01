@@ -3,14 +3,15 @@ import icon1 from "../../../images/followers -icon.svg";
 import icon2 from "../../../images/identification-icon.svg";
 import icon3 from "../../../images/bookmark-icon.svg";
 import Sponsor from "./Sponsors/Sponsor";
-const SideBar = () => {
+const SideBar = ({ info }) => {
+    console.log(info);
     return (
         <div className="side__bar">
             <div className="upper__grid">
                 <div className="profile__img" />
             </div>
             <div className="profile__info">
-                <h3>Anthony Rayan</h3>
+                <h3>{info?.displayName}</h3>
                 <p>
                     Academic Fraud Committed: <span>No</span>
                 </p>
