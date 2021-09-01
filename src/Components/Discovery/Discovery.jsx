@@ -33,8 +33,8 @@ const Discovery = () => {
                     <p>
                         <img src={tick} alt="Tick" />
                         <span>
-                            Contextual alerts when authors are searching topics
-                            related to your paper to start discussions
+                            Alerts in your feed from authors you follow from all
+                            over the web such as blogs, podcasts, and tweets.
                         </span>
                     </p>
                     <p>

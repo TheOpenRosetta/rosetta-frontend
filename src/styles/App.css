@@ -423,14 +423,17 @@ body {
   text-align: center;
   color: #000000;
   opacity: 0.7;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.004em;
   max-width: 820px;
   margin: 0px auto;
 }
 
 .feature > div > p::before {
   content: "Rosetta ";
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 32px;
 }
 
 .feature__bottom > div:nth-of-type(1) {

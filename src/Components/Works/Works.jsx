@@ -30,16 +30,16 @@ const data = [
     {
         img: door,
         h: "Publish open access for free",
-        p: "A network of reputable peers compete to replicate research over time to earn rewards that ensures falsification occurs on our collective knowledge. ",
+        p: "Authors earn Rosetta rewards based on the ImpactScore of the paper. This ensures that all authors that produce quality knowledge get rewarded with some of the value that knowledge produces for society. ",
     },
     {
         img: house,
         h: "Open public goods market",
-        p: "A network of reputable peers compete to replicate research over time to earn rewards that ensures falsification occurs on our collective knowledge. ",
+        p: "Every paper has it’s own token, and entitles owners to recieve a portion of Rosetta from every new block reward. This ensures that every author now earns passive income from producing quality knowledge. ",
     },
     {
         img: giant,
-        h: "Build on the shoulder of giant",
-        p: "A network of reputable peers compete to replicate research over time to earn rewards that ensures falsification occurs on our collective knowledge. ",
+        h: "Build on the shoulder of giants, together.",
+        p: "The most powerful matching engine as authors now collaborate with anyone, anywhere to produce knowledge. Leave a valuable comment discussion, get rewarded. If you’re stuck, post a question, and have the crowd get rewarded in a small percantage of co-authorship to keep you moving forward, all together. ",
     },
 ];
