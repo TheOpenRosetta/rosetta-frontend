@@ -1,29 +1,26 @@
 import React from "react";
 import tick from "../../images/tick.svg";
 const Discovery = () => {
-
-    const Card =[
-        {   
-            "id":"1",
-            "name": "Carl Zimmer",
-            "text": "Carl wrote a new blog post",
-            "img": "#"
+    const Card = [
+        {
+            id: "1",
+            name: "Carl Zimmer",
+            text: "Carl wrote a new blog post",
+            img: "#",
         },
-        {   
-            "id":"2",
-            "name": "Lex Fridman",
-            "text": "Lex appeared on a podcast",
-            "img": "#"
+        {
+            id: "2",
+            name: "Lex Fridman",
+            text: "Lex appeared on a podcast",
+            img: "#",
         },
-        {   
-            "id":"3",
-            "name": "Fei-Fei Li",
-            "text": "Wrote an article in the New York Times",
-            "img": "#"
-        }
-    ] 
-        
-    
+        {
+            id: "3",
+            name: "Fei-Fei Li",
+            text: "Wrote an article in the New York Times",
+            img: "#",
+        },
+    ];
 
     return (
         <section className="discovery container">
@@ -64,19 +61,19 @@ const Discovery = () => {
                     </p>
                 </div>
                 <div>
-                    {Card.map((item,index)=>{
-                        return(
-                            <div key={index}>
+                    {Card.map((item, index) => {
+                        return (
+                            <div key={index} data-aos="fade-down">
                                 <div>
                                     <span>.</span>
                                 </div>
                                 <div>
                                     <p>{item.name}</p>
                                     <p>{item.text}</p>
-                                </div>         
-                            </div>          
-                        )    
-                    })}                         
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </section>

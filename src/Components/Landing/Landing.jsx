@@ -93,7 +93,11 @@ const Landing = () => {
                                                 Total Paper: {x.paperCount}
                                             </small>
                                         </div>
-                                        <Link to="/profile">Profile</Link>
+                                        <Link
+                                            to={`/profile/${x.normalizedName}`}
+                                        >
+                                            Profile
+                                        </Link>
                                     </div>
                                 </Link>
                             ))}
