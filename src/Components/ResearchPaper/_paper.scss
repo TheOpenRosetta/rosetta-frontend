@@ -3,6 +3,9 @@
     > div {
         position: relative;
         top: -100px;
+        @include breakpoints-down(medium) {
+            top: -50px;
+        }
         img {
             width: 100%;
         }
