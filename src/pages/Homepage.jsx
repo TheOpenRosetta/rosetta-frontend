@@ -12,12 +12,12 @@ const Homepage = () => {
         <main>
             <Nav></Nav>
             <Landing></Landing>
-            <Paper></Paper>
+            {/* <Paper></Paper>
             <Feature></Feature>
             <Works></Works>
             <Programmable></Programmable>
             <Discovery></Discovery>
-            <Footer />
+            <Footer /> */}
         </main>
     );
 };

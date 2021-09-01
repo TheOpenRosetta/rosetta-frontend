@@ -5,13 +5,13 @@ $breakpoints-up: (
     "x-large": "87.5em",
 );
 
-//639px 1023px 1399px
+//40px 639px 1023px 1399px
 $breakpoints-down: (
-    "x-small": "25em",
-    "small": "39.9375em",
-    "medium": "64em",
-    "large": "87.4375em",
-    "special": "50.625em",
+    "x-small": "375px",
+    "small": "425px",
+    "medium": "768px",
+    "large": "1024px",
+    "x-large": "1440px",
 );
 
 @mixin breakpoints-up($size) {
@@ -39,7 +39,7 @@ $breakpoints-down: (
     font-size: 16px;
     color: $color;
     &:hover {
-        transition: all 0.3s ease-in-out;
+        transition: all 0.3s;
         transform: translateY(-3px);
     }
 }
