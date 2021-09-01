@@ -84,7 +84,7 @@ const Landing = () => {
                     {result.data.length !== 0 && (
                         <div className="search__result">
                             {result.data.map((x) => (
-                                <Link>
+                                <Link to={`/profile/${x.normalizedName}`}>
                                     <div>
                                         <div></div>
                                         <div>
