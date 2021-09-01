@@ -49,5 +49,34 @@
                 }
             }
         }
+        > div:nth-of-type(2){
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 16px;
+            
+            > div{
+                display: flex;
+                align-items: center;
+                width: 376px;
+                height: 94px;
+                background: #FFFFFF;
+                box-shadow: 20px 60px 80px rgba(118, 118, 118, 0.1);
+                border-radius: 5px;
+                span{
+                    display: block;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    background-color: #000000;
+                    margin:0 12px 0 24px;
+                }
+                p:nth-of-type(1){
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+             
+            }
+        }
     }
 }
