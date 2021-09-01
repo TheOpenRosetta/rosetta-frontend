@@ -34,11 +34,14 @@
             display: flex;
             background-color: white;
             max-width: 500px;
-            margin: 20px auto;
             border: 1px solid #ffffff;
             box-sizing: border-box;
             border-radius: 5px;
             padding: 5px 5px;
+            margin: 0px auto;
+            > img {
+                margin-left: 5px;
+            }
             > input {
                 flex: 1;
                 outline: none;
@@ -46,8 +49,7 @@
                 padding-left: 10px;
             }
             > button {
-                @include button-basic(99px, 40px, $theme-color, "white");
-                color: white !important;
+                @include button-basic(99px, 40px, $theme-color, white);
                 font-size: 14px !important;
             }
         }
@@ -65,7 +67,7 @@
         background: #24272c;
         border-radius: 5px;
         .graph__stats__body {
-            height: 257px;
+            // height: 257px;
             span {
                 font-weight: 500;
                 font-size: 11px;
@@ -75,7 +77,7 @@
                 opacity: 0.8;
             }
             > div {
-                margin: 15px 0px;
+                margin: 10px 0px;
             }
             h5 {
                 font-weight: 500;
@@ -85,4 +87,69 @@
             }
         }
     }
+    .search {
+        &__box {
+            margin: 20px auto;
+        }
+        &__result {
+            background-color: white;
+            width: 100%;
+            max-height: 400px;
+            position: relative;
+            top: -3px;
+            border-radius: 0px 0px 10px 10px;
+            max-width: 500px;
+            margin: 0px auto;
+            color: black;
+            padding: 10px !important;
+            z-index: 999;
+            overflow-y: auto;
+            > a {
+                border-top: 1px solid lightgray;
+                text-decoration: none;
+                padding: 10px 0px;
+                > div {
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0px;
+                    padding: 10px 0px;
+                    border-bottom: 1px solid rgb(243, 237, 228);
+                    > div:nth-of-type(1) {
+                        width: 40px;
+                        height: 40px;
+                        background: #151515;
+                        border-radius: 50%;
+                    }
+                    > div:nth-of-type(2) {
+                        flex: 1;
+                        text-align: left;
+                        margin-left: 10px;
+                        p {
+                            font-weight: 700;
+                            color: $dark-bg;
+                        }
+                        small {
+                            color: rgb(166, 166, 166);
+                        }
+                    }
+                    > a {
+                        @include button-basic(99px, 30px, $dark-bg, white);
+                        text-decoration: none;
+                        font-size: 14px;
+                        padding-top: 4px;
+                        text-align: center;
+                        vertical-align: middle;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
 }

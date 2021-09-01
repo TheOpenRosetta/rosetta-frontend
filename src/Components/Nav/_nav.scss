@@ -6,6 +6,10 @@
         padding: 20px 0px;
         > button {
             @include button-basic(172px, 54px, none, $theme-color);
+            &:hover {
+                background-color: $theme-color !important;
+                color: white !important;
+            }
         }
     }
 }
