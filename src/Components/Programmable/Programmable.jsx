@@ -16,6 +16,13 @@ const Programmable = () => {
                     <p>
                         <img src={tick} alt="Tick" />
                         <span>
+                            Earn citations for every information medium:
+                            datasets, blog posts, code, etc.
+                        </span>
+                    </p>
+                    <p>
+                        <img src={tick} alt="Tick" />
+                        <span>
                             No pre-print, no post print. A continuous living
                             breahting document.
                         </span>

@@ -25,8 +25,10 @@ const Feature = () => {
                     </p>
                     <p>
                         Rosetta is a novel p2p network that lets authors own the
-                        rewards of their work. Rewards get distributed via a
-                        novel incentive mechanism called ImpactScore.
+                        rewards of their work via a novel incentive mechanism
+                        called ImpactScore. It is 100% community owned,
+                        operated, and democratically governed to give back
+                        control to authors.
                     </p>
                 </div>
                 {/* grid 2 */}
@@ -54,13 +56,13 @@ const Feature = () => {
                                     src={fraud}
                                     alt="BYE BYE, ACADEMIC FRAUD"
                                 />
-                                BYE BYE, ACADEMIC FRAUD
+                                BYE BYE, ACADEMIC FRAUD & MISTAKES
                             </span>
                             <p>
-                                When you publish your work you have to stake an
-                                amount of Rosetta tokens. This mechanism ensures
-                                if fraud is found by validators there is a cost
-                                for the author.
+                                Validators scan the network to discover academic
+                                fraud, and mistakes. If they find them they earn
+                                rewards. All fraud is put before a democratic
+                                arbitration process.
                             </p>
                         </div>
                         <div>
@@ -72,11 +74,13 @@ const Feature = () => {
                                 HELLO, AUTHORS FINALLY EARNING REWARDS
                             </span>
                             <p>
-                                Authors earn rewards for the first time by
-                                publishing replicable quality papers.
+                                Authors earn rewards by publishing replicable
+                                quality papers to the knowledge commons. Authors
+                                only earn rewards if they publish knowledge with
+                                all their research outputs.
                             </p>
                         </div>
-                        <button>Read the rosetta whitepaper</button>
+                        <button>Learn more</button>
                     </div>
                     {/* col-2 */}
                     <div>

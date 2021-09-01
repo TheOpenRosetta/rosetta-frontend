@@ -11,11 +11,12 @@ const Footer = () => {
                     <div className="footer__left">
                         <h2>Help Make Knowledge Beautiful Again</h2>
                         <p>
-                            The Rosetta Foundation is a non-profit on a mission
-                            to make knowledge a beautiful global public good
-                            once again. It’s 100% open-source to build on top
-                            of. Built, owned, and operated by a community of
-                            open source developers like yourself.{" "}
+                            Rosetta is neither a non-profit., nor a profit. It’s
+                            a global co-operative that is community built,
+                            owned, and managed by authors for authors. It’s on a
+                            mission to make knowledge a beautiful global public
+                            good once again. It’s 100% open-source to build on
+                            top for a just, and inclusive knowledge commons.
                         </p>
                         <div>
                             <button>Developer Docs</button>
