@@ -30,16 +30,9 @@ const Footer = () => {
                 <div className="container">
                     <small>Say hi: team@openrosetta.org</small>
                     <div>
-                        <a href="#">
-                            <img src={twitter} alt="" />
-                        </a>
-                        <a href="#">
-                            <img src={facebook} alt="" />
-                        </a>
-
-                        <a href="#">
-                            <img src={linkedin} alt="" />
-                        </a>
+                        <button onClick={foo}>Perform action</button>
+                        <button onClick={foo}>Perform action</button>
+                        <button onClick={foo}>Perform action</button>
                     </div>
                 </div>
             </div>
