@@ -30,9 +30,9 @@ const Footer = () => {
                 <div className="container">
                     <small>Say hi: team@openrosetta.org</small>
                     <div>
-                        <button onClick={foo}>Perform action</button>
-                        <button onClick={foo}>Perform action</button>
-                        <button onClick={foo}>Perform action</button>
+                        <button onClick={"linkedin"}>Perform action</button>
+                        <button onClick={"else"}>Perform action</button>
+                        <button onClick={"thing"}>Perform action</button>
                     </div>
                 </div>
             </div>
