@@ -1,77 +1,164 @@
 .footer {
-    background-color: $dark-bg;
-    margin-top: 100px;
+    background: white;
+
     &__top {
         position: relative;
-        padding-bottom: 200px;
-        > img {
-            position: absolute;
-            width: 1000px;
-            top: 50px;
-            right: 0px;
-            object-fit: contain;
+        padding: 74px 0px;
+        @include breakpoints-down(small) {
+            padding: 50px 0px;
         }
         > div {
-            padding: 100px 0px;
             display: grid;
-            grid-template-columns: 60% 40%;
-            color: white;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            @include breakpoints-down(x-large) {
+                gap: 50px;
+            }
+            @include breakpoints-down(large) {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
         }
     }
     &__left {
         h2 {
-            font-weight: bold;
-            font-size: 64px;
-            line-height: 74px;
-        }
-        p {
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 26px;
-            /* or 160% */
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 14px;
+            /* identical to box height, or 58% */
 
             letter-spacing: 0.004em;
 
-            color: #ffffff;
+            color: #000000;
+        }
+        p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 160%;
+            /* or 26px */
 
-            opacity: 0.8;
-            max-width: 580px;
-            margin-top: 36px;
-            margin-bottom: 20px;
+            color: #000000;
+            margin: 20px 0px;
+            /* or 26px */
+            max-width: 307px;
+
+            color: #000000;
+            @include breakpoints-down(large) {
+                max-width: 480px;
+            }
+        }
+        > div {
+            display: flex;
+            gap: 20px;
+            @include breakpoints-down(x-small) {
+                flex-direction: column;
+            }
         }
         button {
             @include button-basic(180px, 54px, $theme-color, white);
             &:nth-of-type(2) {
                 background: none;
-                margin-left: 20px;
             }
         }
     }
-    &__bottom {
-        color: white;
-        background: #0d0e0f;
-        padding: 70px 0px;
+
+    &__right {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 90px;
+        margin: 20px 0px;
+        @include breakpoints-down(medium) {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+        @include breakpoints-down(small) {
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
         > div {
             display: flex;
-            justify-content: space-between;
-            > div {
-                a {
-                    margin: 0px 10px;
-                    background: $theme-color;
-                    width: 43px;
-                    height: 43px;
-                    padding: 10px;
-                    border-radius: 50%;
-                    text-align: center;
-                    > img {
-                        width: 19.65px;
-                        height: 15.96px;
-                    }
+            flex-direction: column;
+            align-items: flex-start;
+            p {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                /* identical to box height, or 133% */
+
+                letter-spacing: 0.004em;
+
+                color: #000000;
+                margin-bottom: 15px;
+            }
+            a {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 24px;
+                /* identical to box height, or 133% */
+
+                letter-spacing: 0.004em;
+
+                color: #000000;
+                margin-bottom: 12px;
+                &:hover {
+                    color: $theme-color;
                 }
             }
         }
-        small {
-            opacity: 0.7;
+    }
+    .github__star {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        > p {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-weight: bold;
+            background: linear-gradient(180deg, #fcfdfd 0%, #f0f0f0 100%);
+            padding: 2px 10px;
+            border: 1px solid lightgray;
+            border-radius: 4px;
+            .MuiSvgIcon-root {
+                margin-right: 3px;
+                font-size: 18px;
+            }
+            &:nth-child(2) {
+                margin-left: 5px;
+                min-width: 50px;
+                small {
+                    color: #2668cf;
+                }
+            }
+        }
+    }
+    &__bye__bye {
+        > div {
+            display: flex;
+            a {
+                margin-right: 10px;
+                > div {
+                    transition: 0.3s all;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: $theme-color;
+                    width: 43px;
+                    height: 43px;
+                    border-radius: 50%;
+                    &:hover {
+                        transform: translateY(-5px);
+                    }
+                }
+            }
         }
     }
 }

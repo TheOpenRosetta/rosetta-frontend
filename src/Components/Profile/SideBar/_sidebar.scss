@@ -1,154 +1,26 @@
-.side__bar{
-    width: 370px;
-    height: 100%;
-    padding-bottom: 30px;
-    border-radius: 8px;
-    background-color: $dark-bg;
-
-    .upper__grid{
-        position: relative;
-        height: 130px;
-        background-color: $theme-color;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-
-        .profile__img{
-            position:absolute;
-            width: 100px;
-            height: 100px;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: -50px;
-            background: $light-bg;
-            border: 1px solid $theme-color;
-            box-sizing: border-box;
-            border-radius: 50px;
+.side__bar {
+    width: 200px;
+    .social__numbers {
+        display: flex;
+        justify-content: flex-start;
+        gap: 12px;
+        margin-bottom: 12px;
+        span {
+            color: rgb(107, 107, 107);
+        }
+        p {
+            color: black;
         }
     }
-    .profile__info{
-        margin: 74px 24px 0 25px ;
-
-        & > h3{
-            font-weight: bold;
-            font-size: 24px;
-            margin-bottom: 12px;
+    .achievement {
+        p {
+            font-weight: 500;
+            padding: 20px 0;
+            font-size: 18px;
+            color: black;
         }
-        span{
-            font-size: 14px;
-            color: $theme-color;
+        img {
+            padding-right: 10px;
         }
-        & > p{
-            color: #7F8082;
-            font-size: 14px;
-
-            &:nth-of-type(2){
-                font-size: 14px;
-                line-height: 22px;
-            }
-        }
-        .amount{
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-            margin-bottom: 24px;
-            & > p{
-                font-size: 14px;
-                line-height: 14px;  
-                color: #EFEFEF;
-                margin-right: 10px;      
-            }
-            .claim-btn{
-                color: $theme-color;
-                background-color: $light-bg;
-                padding: 9px 17px;
-                border-radius: 8px;
-                cursor: pointer;
-            }
-        }
-        .btn-group{
-            display: flex;
-            align-items: center;
-            margin-top: 24px;
-
-            & > p{
-                font-size: 14px;
-                color: $dark-bg;
-                background-color: $theme-color;
-                padding: 15px 32px;
-                border-radius: 8px;
-                margin-right: 10px;
-
-                &:nth-of-type(2){
-                    color: $theme-color;
-                    background-color: $dark-bg;
-                    border: 1px solid $theme-color;
-                    padding: 15px 37px;
-                }
-            }
-        }
-        .icon__group{
-            display: flex;
-            align-items: center;
-            margin-top: 30px;
-
-            .icon{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 12px;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                background-color: $light-bg;
-                border: 1px solid #594E41;
-            }
-            & > p{
-                margin-right: 16px;
-                font-weight: 500;
-                font-size: 14px;
-            }
-        }
-        .achievement{
-            margin-top: 30px;
-            
-            & > h5{
-                font-weight: 500;
-                font-size: 16px;
-                margin-bottom: 20px;
-            }
-            .content__wrapper{
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                gap: 10px;
-                .content__body{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    & > div{
-                        padding: 16px 26px 22px 26px;
-                        background-color: $light-bg;
-                        border-radius: 8px; 
-                        div {
-                            display: flex;
-                            justify-content: center;
-
-                            .content{
-                                width: 48px;
-                                height: 48px;
-                                border-radius: 50%;
-                                background-color: $dark-bg;
-                                margin-bottom: 11px;
-                            }
-                        }
-                        & > p{
-                            color: #fff;
-                            font-weight: normal;
-                            font-size: 14px;
-                        }
-                    }      
-                }   
-            }
-        }  
     }
 }

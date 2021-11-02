@@ -1,0 +1,81 @@
+// .pagination {
+//     display: flex;
+
+//     width: fit-content;
+//     div {
+//         flex: 1;
+//         display: flex;
+//         flex-wrap: wrap;
+//     }
+//     button {
+//         cursor: pointer;
+//         background: none;
+//         color: $theme-color;
+//         border: none;
+//         margin: 0px 15px;
+//         &:disabled {
+//             color: black;
+//         }
+//     }
+//     a {
+//         text-decoration: none;
+
+//         padding: 5px 10px;
+//         font-size: 14px;
+//         // border: 1px solid lightgray;
+//         transition: all 0.2s;
+//         text-align: center;
+//         margin: 0px 1px;
+//         &:hover {
+//             background-color: $theme-color;
+//             color: white;
+//             border-radius: 4px;
+//         }
+//     }
+//     .active {
+//         background-color: $theme-color;
+//         color: white;
+//         border-radius: 4px;
+//     }
+// }
+.pagination {
+    li {
+        &:nth-of-type(1) {
+            background: none;
+
+            .MuiPaginationItem-previousNext {
+                padding: 10px;
+                &::after {
+                    content: " Previous";
+                    margin-left: 10px;
+                }
+            }
+        }
+        &:last-of-type {
+            background: none;
+
+            .MuiPaginationItem-previousNext {
+                padding: 10px;
+
+                &::before {
+                    content: " next";
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    // .MuiButtonBase-root {
+    // }
+    // .MuiPaginationItem-previousNext {
+    //     &:nth-of-type(1) {
+    //         background: green;
+    //         &::after {
+    //             content: "next";
+    //         }
+    //     }
+    // }
+    .Mui-selected {
+        color: white !important;
+        border-radius: 5px;
+    }
+}

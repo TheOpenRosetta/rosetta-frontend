@@ -1,5 +1,6 @@
 .overview {
-    color: #efefef;
+    color: black;
+    background-color: #e5e5e5;
     > div {
         margin-bottom: 30px;
         > p {
@@ -11,62 +12,92 @@
         }
     }
     > div:nth-of-type(1) {
-        border-bottom: 1px solid #27292d;
-        > button {
-            background: none;
-            border: none;
-            color: $theme-light;
-            font-weight: 500;
-            font-size: 16px;
-            width: 135px;
-            height: 54px;
-            cursor: pointer;
-            &.active {
-                background: $light-bg !important;
-                border-bottom: 1px solid $theme-color;
-                border-radius: 8px 8px 0px 0px;
+        box-shadow: 0 4px 2px -2px lightgray;
+        background-color: white;
+        > div {
+            padding: 0px 200px;
+            > button {
+                background: none;
+                border: none;
+                color: #7c7d8c;
+                font-weight: 500;
+                font-size: 16px;
+                width: 135px;
+                height: 54px;
+                cursor: pointer;
+                &.active {
+                    color: $dark-bg;
+                    border-bottom: 2px solid $dark-bg;
+                }
             }
         }
     }
 }
-.profile__card {
-    background: #24272c;
-    border-radius: 8px;
-    padding: 16px;
-    margin-top: 16px;
+
+.overview__wrapper {
+    display: flex;
 }
-
-.profile__popular__papers {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 16px;
-    color: #efefef;
-    > div {
-        background: #1d1e22;
-        border-radius: 8px;
-        padding: 18px;
-
-        > div:nth-of-type(1) {
-            display: flex;
-            align-items: center;
-            > span {
-                margin-left: 10px;
-            }
+.right__content {
+    flex: 1;
+    .title__text {
+        font-weight: 500;
+        margin-bottom: 16px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131416;
+    }
+    .profile__card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 14px;
+        margin-bottom: 32px;
+        p {
+            padding: 0.2rem;
         }
-        > div:nth-of-type(2) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-top: 15px;
-            > div {
+    }
+
+    .profile__popular__papers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        color: #efefef;
+        > div {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 18px;
+
+            > div:nth-of-type(1) {
                 display: flex;
                 align-items: center;
-                background-color: $light-bg;
-                padding: 8px;
-                border-radius: 8px;
                 > span {
                     margin-left: 10px;
-                    color: $theme-light;
+                    &:first-letter {
+                        text-transform: capitalize;
+                    }
+                    > a {
+                        color: white;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            > div:nth-of-type(2) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                margin-top: 15px;
+                > div {
+                    display: flex;
+                    align-items: center;
+                    background-color: $light-bg;
+                    padding: 8px;
+                    border-radius: 8px;
+                    > span {
+                        margin-left: 10px;
+                        color: $theme-light;
+                    }
                 }
             }
         }

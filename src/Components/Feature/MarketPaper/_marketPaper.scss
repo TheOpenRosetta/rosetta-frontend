@@ -1,0 +1,88 @@
+.marketPrice {
+    background: #f4f4f4;
+    padding: 110px 0px;
+    @include breakpoints-down(medium) {
+        padding: 50px 0px;
+    }
+    > div:nth-of-type(1) {
+        text-align: center;
+        > p {
+            &:nth-of-type(1) {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 48px;
+                @include breakpoints-down(small) {
+                    font-size: 36px;
+                }
+                line-height: 120%;
+                /* identical to box height, or 58px */
+
+                text-align: center;
+
+                /* Neutrals/Woodsmoke 100% :: 131416 */
+
+                color: #131416;
+            }
+            &:nth-of-type(2) {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 160%;
+                /* or 26px */
+
+                text-align: center;
+
+                /* Neutrals/Waterloo 100% :: 7C7D8C */
+
+                color: #131416;
+
+                max-width: 870px;
+                margin: 28px auto;
+            }
+        }
+    }
+    > div:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include breakpoints-down(large) {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        gap: 150px;
+        margin-top: 50px;
+        > div:nth-of-type(1) {
+            > div {
+                margin-bottom: 50px;
+                @include breakpoints-down(medium) {
+                    text-align: center;
+                }
+                > p {
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 120%;
+                    color: #131416;
+                    &:nth-of-type(2) {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 160%;
+                        /* or 26px */
+
+                        /* Neutrals/Waterloo 100% :: 7C7D8C */
+
+                        color: #7c7d8c;
+                        margin: 16px auto;
+                        max-width: 554px;
+                    }
+                }
+            }
+        }
+        img {
+            @include breakpoints-down(x-large) {
+                width: 100%;
+            }
+        }
+    }
+}

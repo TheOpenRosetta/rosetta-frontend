@@ -1,0 +1,79 @@
+.paperBody {
+    padding: 120px 0px;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 5%;
+
+    &__left {
+        > h2 {
+            font-weight: normal;
+            font-size: 41px;
+            line-height: 74px;
+            /* identical to box height, or 181% */
+
+            color: #131416;
+        }
+        > p {
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            /* or 160% */
+            letter-spacing: 0.004em;
+            color: #000000;
+            opacity: 0.7;
+            &:nth-of-type(1) {
+                opacity: 1;
+                font-size: 18px;
+            }
+        }
+    }
+    &__right {
+        background: #fbfbfb;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        padding: 16px;
+        > div:nth-of-type(1) {
+            > p {
+                font-size: 16px;
+                line-height: 21px;
+                /* identical to box height */
+                font-weight: 500;
+                color: #09012f;
+            }
+        }
+    }
+    .comments__card {
+        background: #ffffff;
+        border-radius: 0px 8px 8px 0px;
+        margin: 20px 0px;
+        padding: 16px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        min-height: 125px;
+        > div {
+            flex: 1;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            > div {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 140%;
+                color: #000000;
+                opacity: 0.6;
+                display: flex;
+                justify-content: space-between;
+            }
+            > p {
+                margin-top: 5px;
+            }
+        }
+        &:nth-of-type(odd) {
+            border-left: 2px solid #4d9be9;
+        }
+        &:nth-of-type(even) {
+            border-left: 2px solid #ef7832;
+        }
+    }
+}

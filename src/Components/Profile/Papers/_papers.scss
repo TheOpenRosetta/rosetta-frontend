@@ -1,69 +1,41 @@
 .papers {
     > div:nth-of-type(1) {
-        border-bottom: 1px solid #27292d;
-        > button {
-            background: none;
-            border: none;
-            color: $theme-light;
-            font-weight: 500;
-            font-size: 16px;
-            width: 135px;
-            height: 54px;
-            cursor: pointer;
-            &.active {
-                background: $light-bg !important;
-                border-bottom: 1px solid $theme-color;
-                border-radius: 8px 8px 0px 0px;
+        box-shadow: 0 4px 2px -2px lightgray;
+        background-color: white;
+        > div {
+            padding: 0px 200px;
+            > button {
+                background: none;
+                border: none;
+                color: #7c7d8c;
+                font-weight: 500;
+                font-size: 16px;
+                width: 135px;
+                height: 54px;
+                cursor: pointer;
+                &.active {
+                    color: $dark-bg;
+                    border-bottom: 2px solid $dark-bg;
+                }
             }
         }
     }
     > div:nth-of-type(2) {
-        background-color: $light-bg;
-        padding: 10px;
-        border-radius: 8px;
-        margin: 20px 0px;
-        > div {
-            background-color: $dark-bg;
-            padding: 16px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            > div:nth-of-type(1) {
-                display: flex;
-                align-items: flex-start;
-                > div {
-                    margin-left: 10px;
-                    > p {
-                        font-weight: 500;
-                        font-size: 14px;
-                        line-height: 17px;
-                        &:nth-of-type(1) {
-                            color: #efefef;
-                            margin-bottom: 10px;
-                        }
-                        &:nth-of-type(2) {
-                            color: #67696d;
-                            font-size: 14px;
-                            line-height: 22px;
-                        }
-                    }
-                }
+        display: flex;
+        padding: 30px 0px;
+        > div:nth-of-type(2) {
+            flex: 1;
+            > div {
+                margin-bottom: 10px;
             }
-            > div:nth-of-type(2) {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                margin-top: 20px;
-                gap: 10px;
-                > div {
-                    display: flex;
-                    align-items: center;
-                    background-color: $light-bg;
-                    padding: 8px;
-                    border-radius: 8px;
-                    > span {
-                        margin-left: 10px;
-                        color: $theme-light;
-                    }
-                }
+            > p {
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: #131416;
             }
         }
     }

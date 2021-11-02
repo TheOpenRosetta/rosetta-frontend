@@ -1,0 +1,86 @@
+.digital__publishing {
+    padding: 130px 0px;
+    font-family: "Inter";
+    @include breakpoints-down(medium) {
+        padding: 50px 0px;
+    }
+    &__header {
+        text-align: center;
+
+        & > h2 {
+            font-weight: 300;
+            font-size: 48px;
+            color: $dark-bg;
+            @include breakpoints-down(medium) {
+                font-size: 36px;
+            }
+        }
+        & > p {
+            font-size: 16px;
+            line-height: 170%;
+            text-align: center;
+            color: #7c7d8c;
+
+            padding-bottom: 60px;
+            max-width: 890px;
+            margin: 24px auto 5px auto;
+        }
+    }
+    &__horizontal__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0rem;
+        gap: 2rem;
+        @include breakpoints-down(small) {
+            flex-wrap: wrap;
+            padding: 0;
+            gap: 0;
+        }
+        .info {
+            @include info();
+
+            @include breakpoints-down(small) {
+                text-align: center;
+            }
+            > h2 {
+                min-height: 30px;
+            }
+        }
+    }
+    &__wrapper {
+        display: flex;
+        gap: 1rem;
+        @include breakpoints-down(small) {
+            flex-wrap: wrap;
+        }
+        .digital__publishing__left {
+            flex: 2;
+            .info {
+                @include info();
+                max-width: 400px;
+                min-width: 320px;
+                @include breakpoints-down(small) {
+                    text-align: center;
+                }
+                > h2 {
+                    min-height: 30px;
+                    @include breakpoints-down(small) {
+                        min-height: 10px;
+                    }
+                }
+            }
+        }
+        .digital__publishing__right {
+            flex: 3;
+
+            img {
+                width: 100%;
+                min-width: 200px;
+                height: 690px;
+                @include breakpoints-down(small) {
+                    height: 580px;
+                }
+            }
+        }
+    }
+}

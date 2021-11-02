@@ -1,0 +1,158 @@
+.impactScore {
+    background: #131416;
+    color: white;
+    padding: 74px 0px;
+    @include breakpoints-down(medium) {
+        padding: 50px 0px;
+    }
+    > div:nth-of-type(1) {
+        > div:nth-of-type(1) {
+            > h2 {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 48px;
+                @include breakpoints-down(small) {
+                    font-size: 36px;
+                }
+                line-height: 120%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            > p {
+                margin: 30px auto;
+                max-width: 920px;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 160%;
+                /* or 26px */
+
+                text-align: center;
+
+                /* Neutrals/White 100 :: FFFFFF */
+
+                color: #ffffff;
+
+                opacity: 0.7;
+            }
+        }
+        > div:nth-of-type(2) {
+            > p {
+                text-align: left;
+                &:nth-of-type(1) {
+                    z-index: -1;
+                    margin: 10px auto;
+                    width: 414px;
+                    padding: 22px 20px 52px 20px;
+                    background: #24272c;
+                    border-radius: 12px;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 20.9836px;
+                    line-height: 160%;
+                    @include breakpoints-down(medium) {
+                        width: fit-content;
+                        padding: 10px 20px 28px 12px;
+                        font-size: 16px;
+                        border-radius: 5px;
+                    }
+                    color: #ffffff;
+                }
+                &:nth-of-type(2) {
+                    position: relative;
+                    top: -10px;
+                    z-index: 1;
+                    margin: 10px auto;
+                    width: 551px;
+                    @include breakpoints-down(medium) {
+                        width: fit-content;
+                    }
+                    padding: 20px;
+                    background: #24272c;
+                    border-radius: 12px;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #ffffff;
+                    opacity: 0.8;
+                }
+                &:nth-of-type(3) {
+                    position: relative;
+                    top: -30px;
+                    margin: 0px auto;
+                    padding: 20px 24px;
+                    width: 529px;
+                    @include breakpoints-down(medium) {
+                        width: fit-content;
+                    }
+                    background: #131416;
+                    border: 1px solid #24272c;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 160%;
+                    /* or 26px */
+
+                    color: #ffffff;
+
+                    opacity: 0.8;
+                }
+                span {
+                    position: relative;
+                    font-size: 30px;
+                    top: 4px;
+                    margin-right: 7px;
+                    @include breakpoints-down(medium) {
+                        font-size: 25px;
+                        margin-right: 3px;
+                    }
+                }
+
+                span:after {
+                    font-size: 12px;
+                    display: block;
+                    position: absolute;
+                    left: -5px;
+                    bottom: -20px;
+                    content: "a \220A  A";
+                    width: 30px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    > div:nth-of-type(2) {
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @include breakpoints-down(medium) {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        gap: 60px;
+        > div {
+            p {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 160%;
+                color: #ffffff;
+
+                &:nth-of-type(2) {
+                    opacity: 0.7;
+                    font-size: 16px;
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.activity {
+    margin: 32px 0px;
+    > p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #24272c;
+        margin-bottom: 20px;
+    }
+    &__button {
+        > button {
+            width: 101px;
+            height: 32px;
+            background: none;
+            border-radius: 8px 8px 0px 0px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 160%;
+            /* identical to box height, or 26px */
+
+            text-align: center;
+
+            /* Primary Color/ Golden 100% :: E92044 */
+
+            &.active {
+                color: #b68e5c;
+                border-bottom: 2px solid $theme-color;
+                background: #ffffff;
+            }
+        }
+    }
+    &__table {
+        background-color: white;
+        padding: 10px;
+        border-radius: 8px;
+        > div {
+            background: #fbfbfb;
+            border-radius: 8px;
+            padding-bottom: 12px;
+        }
+        &__month {
+            display: flex;
+            padding: 10px;
+            > div {
+                &:nth-of-type(1) {
+                    width: 150px;
+                }
+                &:nth-of-type(2) {
+                    flex: 1;
+                    display: flex;
+                    > div {
+                        flex: 1;
+                        font-size: 12px;
+                        color: #7c7d8c;
+                    }
+                }
+            }
+        }
+        &__contribution {
+            display: flex;
+            align-items: center;
+            > div {
+                &:nth-of-type(1) {
+                    width: 160px;
+                    padding: 0px 20px;
+                    font-size: 12px;
+                    line-height: 160%;
+                    text-align: right;
+                    color: #7c7d8c;
+                }
+                &:nth-of-type(2) {
+                    flex: 1;
+                    display: flex;
+                    gap: 4px;
+                    > div {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 2px;
+                        background: rgba(44, 119, 192, 0.4);
+                        &.small {
+                            background: rgba(44, 119, 192, 0.7);
+                        }
+                        &.large {
+                            background: #2c77c0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

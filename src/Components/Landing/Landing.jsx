@@ -1,67 +1,85 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import search from "../../images/search-normal.svg";
-import { css } from "@emotion/react";
-import PuffLoader from "react-spinners/PuffLoader";
+import React from "react";
+
+// import search from "../../images/search-normal.svg";
+// import { css } from "@emotion/react";
+// import PuffLoader from "react-spinners/PuffLoader";
+import Particle from "../Particle/Particle";
+// import { DataContext } from "../../StateManagement/AuthorsContext";
+import img1 from "../../images/open access.png";
+import img2 from "../../images/open source.png";
+import img3 from "../../images/non profit.png";
+import { Link, useHistory } from "react-router-dom";
 const Landing = () => {
-    const [result, setResult] = useState({
-        data: [],
-        loading: false,
-    });
-    const override = css`
-        display: block;
-        margin: 0 auto;
-        border-color: red;
-    `;
-    const [name, setName] = useState("");
+    let history = useHistory();
+    // const [result, setResult] = useState({
+    //     data: [],
+    //     loading: false,
+    // });
+    // const override = css`
+    //     display: block;
+    //     margin: 0 auto;
+    //     border-color: red;
+    // `;
+    // const [name, setName] = useState("");
+    // const [authors, setAuthors] = useContext(DataContext);
 
-    const handleForm = (e) => {
-        const temp = { ...result };
-        temp.loading = true;
-        setResult(temp);
-        if (name) {
-            fetch(
-                `https://rosetta.eastus.cloudapp.azure.com/api/getauthors/${name}`
-            )
-                .then((response) => response.json())
-                .then((Data) =>
-                    setResult({
-                        data: Data,
-                        loading: false,
-                    })
-                );
-        } else {
-            setResult({
-                data: [],
-                loading: false,
-            });
-        }
-
-        e.preventDefault();
-    };
-
-    const handleChange = (e) => {
-        if (e.target.value) {
-            setName(e.target.value);
-        } else {
-            setResult({
-                data: [],
-                loading: false,
-            });
-        }
-    };
-
+    // const handleForm = (e) => {
+    //     const temp = { ...result };
+    //     temp.loading = true;
+    //     setResult(temp);
+    //     if (name) {
+    //         fetch(
+    //             `https://rosetta.eastus.cloudapp.azure.com/api/getauthors/${name}`
+    //         )
+    //             .then((response) => response.json())
+    //             .then((Data) =>
+    //                 setResult({
+    //                     data: Data,
+    //                     loading: false,
+    //                 })
+    //             );
+    //     } else {
+    //         setResult({
+    //             data: [],
+    //             loading: false,
+    //         });
+    //     }
+    //     e.preventDefault();
+    // };
+    // const handleChange = (e) => {
+    //     if (e.target.value) {
+    //         setName(e.target.value);
+    //     } else {
+    //         setResult({
+    //             data: [],
+    //             loading: false,
+    //         });
+    //     }
+    // };
+    // useEffect(() => {
+    //     setAuthors(result.data);
+    // }, [result]);
     return (
         <section className="hero">
+            <Particle></Particle>
             <div className="container">
                 <p>Introducing Rosetta</p>
-                <h1>The new protocol for truthful open science</h1>
+                <h1>
+                    The new peer-to-peer social publishing network owned by
+                    authors
+                </h1>
                 <p>
-                    The new decentralised global P2P platform co-operative
-                    social network where authors finally own the rewards, and
-                    democratically manage the knowledge commons, together.
+                    <span>
+                        Join the open access publishing movement on a fully open
+                        source social network where authors now earn ownership
+                        in the network by contributing to the knowledge commons.
+                    </span>{" "}
+                    The average paper published earns the author $1,000 a year
+                    in ownership rewards on our network based on its
+                    ImpactScore, and recieves 70% more citations over it’s
+                    lifetime by publishing open access.
                 </p>
-                <div className="search__box">
+                {/* <div className="search__box">
                     <form onSubmit={handleForm}>
                         <img src={search} alt="" />
                         <input
@@ -83,8 +101,11 @@ const Landing = () => {
                     </form>
                     {result.data.length !== 0 && (
                         <div className="search__result">
-                            {result.data.map((x) => (
-                                <Link to={`/profile/${x.normalizedName}`}>
+                            {result.data.map((x, index) => (
+                                <Link
+                                    to={`/profile/${x.authorId}/${x.normalizedName}/`}
+                                    key={index}
+                                >
                                     <div>
                                         <div></div>
                                         <div>
@@ -94,7 +115,7 @@ const Landing = () => {
                                             </small>
                                         </div>
                                         <Link
-                                            to={`/profile/${x.normalizedName}`}
+                                            to={`/profile/${x.authorId}/${x.normalizedName}/`}
                                         >
                                             Profile
                                         </Link>
@@ -103,11 +124,25 @@ const Landing = () => {
                             ))}
                         </div>
                     )}
+                </div> */}
+                <div className="two__btn">
+                    <button onClick={() => history.push("/start/")}>
+                        Get Early Access
+                    </button>
+                    <button onClick={() => history.push("/features/")}>
+                        Learn more
+                    </button>
                 </div>
-                <small>
-                    Over 271+ Million Authors profiles & rewards ready to be
-                    claimed on our network
-                </small>
+                <p>
+                    Over <span>271+ Million </span> authors can now see how much
+                    ownership, and extra income you can claim from your past
+                    papers in under 2 minutes.
+                </p>
+                <div className="three__img">
+                    <img src={img1} alt="" />
+                    <img src={img3} alt="" />
+                    <img src={img2} alt="" />
+                </div>
             </div>
             <div className="graph__stats">
                 <div className="graph__stats__body">

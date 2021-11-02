@@ -1,0 +1,53 @@
+.feature__top {
+    background: $dark-bg;
+    padding: 20px 0;
+    font-family: Inter;
+    .feature__top__wrapper {
+        color: #fff;
+        text-align: center;
+        .header__top {
+            padding: 15vh 0;
+            @include breakpoints-down(small) {
+                padding: 2vh 0;
+            }
+            & > h1 {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 48px;
+                @include breakpoints-down(small) {
+                    font-size: 35px;
+                }
+            }
+            & > p {
+                font-size: 16px;
+                line-height: 160%;
+                margin: 0 auto;
+                max-width: 869px;
+                opacity: 0.8;
+                padding: 24px 0px 42px 0px;
+            }
+        }
+        .bottom__text__wrapper {
+            display: grid;
+            gap: 75px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            @include breakpoints-down(medium) {
+                grid-template-columns: 1fr 1fr;
+            }
+            @include breakpoints-down(small) {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            > p {
+                flex: 1;
+                text-align: start;
+                opacity: 0.7;
+                font-size: 14px;
+                line-height: 160%;
+                @include breakpoints-down(small) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

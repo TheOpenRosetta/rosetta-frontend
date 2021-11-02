@@ -9,11 +9,13 @@ const Feature = () => {
             <div className="container">
                 <p>
                     is a new innovative P2P social network that lets any author
-                    finally own the rewards from their work, get discovered, and
-                    stay in the loop. Just by publishing open access for free in
-                    a way that can be reproduced, and proven truthful. A network
-                    of validators scan papers for academic fraud, mistakes, and
-                    attempt to falsify papers to win rewards.
+                    finally own the rewards, and democratically manage societies
+                    knowledge commons, together. Earn rewards by publishing open
+                    access quality knowledge for free in a way that can be
+                    reproduced, and proven truthful. A network of reputable
+                    peers, called validators scan all papers for academic fraud,
+                    mistakes, and attempt to falsify all papers to win, and earn
+                    rewards.
                 </p>
             </div>
             <div className="container feature__bottom">

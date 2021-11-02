@@ -1,0 +1,61 @@
+.problem {
+    background-color: #fff;
+    max-width: 970px;
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 24px;
+    margin-bottom: 10px;
+    .problem__left {
+        & > h1 {
+            font-weight: 500;
+            font-size: 22px;
+            color: #2c77c0;
+            margin-bottom: 10px;
+        }
+        & > p {
+            font-size: 14px;
+            color: #7c7d8c;
+            margin-bottom: 7px;
+        }
+        & > div:nth-child(3) {
+            display: flex;
+            gap: 18px;
+            div {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                p {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #7c7d8c;
+                    span {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+    .problem__right {
+        display: flex;
+        gap: 10px;
+        & > div {
+            text-align: center;
+            display: grid;
+            place-content: center;
+            width: 169px;
+            height: 140px;
+            background: #f2f3f7;
+            & > p {
+                font-size: 14px;
+                color: #696969;
+                margin-bottom: 7px;
+            }
+            & > h1 {
+                font-weight: bold;
+                font-size: 22px;
+                color: #b68e5c;
+            }
+        }
+    }
+}

@@ -1,45 +1,76 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import twitter from "../../images/twitter.svg";
 import facebook from "../../images/facebook.svg";
-import linkedin from "../../images/linkedin.svg";
-import card from "../../images/Cards@2x.png";
+// import linkedin from "../../images/linkedin.svg";
+
+import { Link } from "react-router-dom";
+import GitHubIcon from "@material-ui/icons/GitHub";
 const Footer = () => {
+    const [star, setStar] = useState(0);
+    useEffect(() => {
+        fetch("https://api.github.com/repos/TheOpenRosetta/rosetta-frontend")
+            .then((response) => response.json())
+            .then((json) => setStar(json.stargazers_count));
+    }, []);
     return (
         <footer className="footer">
             <div className="footer__top">
                 <div className="container">
                     <div className="footer__left">
-                        <h2>Help Make Knowledge Beautiful Again</h2>
+                        <h2>ROSETTA</h2>
                         <p>
-                            Rosetta is neither a non-profit., nor a profit. It’s
-                            a global co-operative that is community built,
-                            owned, and managed by authors for authors. It’s on a
-                            mission to make knowledge a beautiful global public
-                            good once again. It’s 100% open-source to build on
-                            top for a just, and inclusive knowledge commons.
+                            A proud new author owned non-profit building the
+                            most powerful open digital infrastructure for all
+                            authors.
                         </p>
+                    </div>
+                    <div className="footer__right">
                         <div>
-                            <button>Developer Docs</button>
-                            <button>Apply for Grants</button>
+                            <p>Rosetta</p>
+                            <Link to="/features/">Features</Link>
+                            <Link to="/developers/">Developers</Link>
+                            <a href="https://rosetta-2.gitbook.io/rosetta-docs/">
+                                Docs
+                            </a>
+                            <Link to="/spread/">Spread</Link>
+                        </div>
+                        <div>
+                            <p>Rosetta</p>
+                            <Link to="/about/">About</Link>
+                            <Link to="/authors/">Authors</Link>
+                            <a href="#">Careers</a>
+                            <Link to="/faq/">FAQ</Link>
+                        </div>
+                        <div>
+                            <p>Contact</p>
+                            <a href="/feature">hello@openrosetta.org</a>
+                            <div className="github__star">
+                                <p>
+                                    <GitHubIcon></GitHubIcon> Star
+                                </p>
+                                <p>
+                                    <small>{star}</small>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <img src={card} alt="" />
-            </div>
-            <div className="footer__bottom ">
-                <div className="container">
-                    <small>Say hi: team@openrosetta.org</small>
-                    <div>
-                        <button onClick={"linkedin"}>Perform action
-                            <img src={twitter} alt="" />
-                        </button>
-                        <button onClick={"else"}>Perform action
-                            <img src={facebook} alt="" />
-                        </button>
-                        <button onClick={"thing"}>Perform action
-                            <img src={linkedin} alt="" />    
-                        </button>
+                <div className="footer__bye__bye container">
+                    <div className="social__link__wrapper">
+                        <a href="https://github.com/TheOpenRosetta">
+                            <div>
+                                <img src={facebook} alt="" />
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/rosettaopen">
+                            <div>
+                                <img src={twitter} alt="" />
+                            </div>
+                        </a>
                     </div>
+                </div>
+                <div className="container" style={{ marginTop: "15px" }}>
+                    <p>Open Rosetta Foundation </p>
                 </div>
             </div>
         </footer>

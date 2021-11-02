@@ -4,7 +4,7 @@
         position: relative;
         top: -100px;
         @include breakpoints-down(medium) {
-            top: -50px;
+            top: -30px;
         }
         img {
             width: 100%;

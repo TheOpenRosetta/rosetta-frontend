@@ -1,0 +1,104 @@
+.verifyPapers {
+    &__right__top {
+        text-align: center;
+        p:nth-child(1) {
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 120%;
+            padding: 80px 0 34px 0;
+            color: #131416;
+        }
+        p:nth-child(3) {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 120%;
+            padding: 20px 0 8px 0;
+            color: #131416;
+        }
+        p:nth-child(4) {
+            font-size: 14px;
+            line-height: 160%;
+            color: #24272c;
+            opacity: 0.7;
+            padding-bottom: 32px;
+        }
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 21px;
+        max-width: 594px;
+        margin: 0 auto;
+        padding: 16px 24px 18px 24px;
+        background: #ffffff;
+        border: 1px solid #dedede;
+        box-sizing: border-box;
+        border-radius: 12px;
+        margin-bottom: 1rem;
+        &__info {
+            flex: 1;
+            p:nth-child(1) {
+                font-size: 12px;
+                line-height: 160%;
+                color: #24272c;
+                opacity: 0.7;
+                span {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 160%;
+                    color: #24272c;
+                    opacity: 0.8;
+                }
+            }
+            p:nth-child(2) {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 160%;
+                text-transform: capitalize;
+            }
+            p:nth-child(3) {
+                font-size: 10px;
+                line-height: 160%;
+                color: #7c7d8c;
+            }
+        }
+        &__button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            button {
+                @include button-basic(133px, 32px, #b68e5c, #fff);
+                border-radius: 4px;
+                font-size: 14px;
+            }
+        }
+    }
+    .get__started__btn {
+        @include positionCenter;
+
+        button {
+            margin: 50px 50px;
+            @include breakpoints-down(medium) {
+                width: 30vw !important;
+            }
+            &:nth-of-type(1) {
+                @include button-basic(300px, 54px, none, $theme-color);
+            }
+            &:nth-of-type(2) {
+                @include button-basic(300px, 54px, #b68e5c, #fff);
+            }
+        }
+    }
+    .pagination {
+        max-width: 900px;
+        margin: 0px auto;
+        > div {
+            display: flex !important;
+            justify-content: flex-end !important;
+        }
+    }
+    .loader {
+        display: grid;
+        place-items: center;
+    }
+}

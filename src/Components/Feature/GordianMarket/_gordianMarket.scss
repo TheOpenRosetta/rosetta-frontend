@@ -1,0 +1,78 @@
+.gordianMarket {
+    background: #131416;
+    padding: 110px 0px;
+    @include breakpoints-down(medium) {
+        padding: 50px 0px;
+    }
+    color: white;
+    > div:nth-of-type(1) {
+        text-align: center;
+        > p {
+            &:nth-of-type(1) {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 48px;
+                @include breakpoints-down(medium) {
+                    font-size: 36px;
+                }
+                line-height: 120%;
+                text-align: center;
+                color: white;
+            }
+            &:nth-of-type(2) {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 160%;
+                text-align: center;
+                color: #b2b2b2;
+                max-width: 870px;
+                margin: 28px auto;
+            }
+        }
+    }
+    > div:nth-of-type(2) {
+        margin-top: 54px;
+
+        > img {
+            width: 100%;
+        }
+    }
+    > div:nth-of-type(3) {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        @include breakpoints-down(large) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include breakpoints-down(medium) {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        gap: 30px;
+        > div {
+            p {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 120%;
+                min-height: 75px;
+                @include breakpoints-down(large) {
+                    min-height: 70px;
+                }
+                @include breakpoints-down(medium) {
+                    min-height: 50px;
+                }
+                &:nth-of-type(2) {
+                    font-size: 16px;
+                    margin-top: 24px;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #b2b2b2;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}

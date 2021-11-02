@@ -1,0 +1,203 @@
+.verifyIdentity {
+    > div:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 50px;
+    }
+    &__right__top {
+        p {
+            &:nth-of-type(1) {
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 120%;
+
+                color: #131416;
+            }
+            &:nth-of-type(2) {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 160%;
+                color: #131416;
+                opacity: 0.7;
+                margin: 20px auto;
+                max-width: 666px;
+            }
+        }
+    }
+}
+
+.onboarding__authorProfile {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include breakpoints-down(medium) {
+        grid-template-columns: 1fr;
+    }
+    gap: 40px;
+    max-width: 900px;
+    margin: 0px auto;
+    > .authorProfile__card {
+        background: #ffffff;
+        border: 1px solid #dedede;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 32px;
+        @include breakpoints-down(small) {
+            padding: 15px 10px;
+        }
+        > div:nth-of-type(1) {
+            display: flex;
+            > div:nth-of-type(2) {
+                flex: 1;
+                text-align: left;
+                margin-left: 10px;
+                > div:nth-of-type(1) {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    @include breakpoints-down(small) {
+                        flex-direction: column;
+                    }
+                    > div {
+                        p {
+                            &:nth-of-type(1) {
+                                font-weight: bold;
+                                font-size: 20px;
+                                line-height: 120%;
+                                /* identical to box height, or 24px */
+
+                                /* Neutrals 01/Woodsmoke 100% */
+
+                                color: #131416;
+                            }
+                            &:nth-of-type(2) {
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 12px;
+                                line-height: 160%;
+                                /* or 19px */
+                                color: #24272c;
+                            }
+                        }
+                    }
+
+                    button {
+                        @include breakpoints-down(small) {
+                            margin-top: 10px;
+                        }
+                        padding: 7px 15px;
+                        color: $theme-color;
+                        background: none;
+                        border: 1px solid $theme-color;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: all 0.2s ease;
+                        margin-left: 2px;
+                        &.active {
+                            background-color: $theme-color;
+                            color: white;
+                        }
+                        &:hover {
+                            background-color: $theme-color;
+                            color: white;
+                        }
+                    }
+                }
+                > div:nth-of-type(2) {
+                    display: flex;
+                    margin-top: 15px;
+                    > div {
+                        flex: 1;
+                    }
+                    p {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 160%;
+                        color: #000000;
+                    }
+                    small {
+                        font-weight: normal;
+                        font-size: 11px;
+                        line-height: 160%;
+                        /* identical to box height, or 16px */
+
+                        text-align: center;
+
+                        color: #000000;
+
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+        > div:nth-of-type(2) {
+            text-align: left;
+            margin-top: 10px;
+            > div {
+                border-top: 1px solid #f7f8f3;
+                padding: 10px 0px;
+                small {
+                    font-size: 12px;
+                    line-height: 160%;
+                    color: #24272c;
+                    opacity: 0.6;
+                }
+                > span {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 160%;
+                    color: #1a1c1f;
+                }
+                > p {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 160%;
+                    color: #24272c;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+.verifyIdentity__right__bottom {
+    max-width: 900px;
+    margin: 0px auto;
+    > div:nth-of-type(2) {
+        margin-top: 30px;
+
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+    }
+    > div:nth-of-type(3) {
+        display: flex;
+        justify-content: space-around;
+        > button {
+            margin-top: 50px;
+            width: 300px;
+            @include breakpoints-down(medium) {
+                width: 30vw;
+            }
+            height: 54px;
+            text-transform: capitalize;
+            &:nth-of-type(2) {
+                background: $theme-color;
+                color: white;
+                &:hover {
+                    background: $theme-color;
+                    opacity: 0.9;
+                }
+            }
+            &:nth-of-type(1) {
+                color: $theme-color;
+                border: 1px solid $theme-color !important;
+            }
+            &:disabled {
+                opacity: 0.7;
+            }
+        }
+    }
+}

@@ -4,85 +4,97 @@ import dollar from "../../../images/dollar.png";
 import calender from "../../../images/calender.png";
 import bookmark from "../../../images/bookmark.png";
 import number from "../../../images/number.png";
-const Papers = ({ setActive }) => {
+import { Link } from "react-router-dom";
+import FeaturedPapers from "../FeaturedPapers/FeaturedPapers";
+import SideBar from "../SideBar/SideBar";
+const Papers = ({ setActive, info }) => {
     return (
         <div className="papers">
             <div>
-                <button onClick={() => setActive(1)}>Overview</button>
-                <button className="active" onClick={() => setActive(2)}>
-                    Papers ({20})
-                </button>
+                <div className="container">
+                    <button onClick={() => setActive(1)}>Overview</button>
+                    <button className="active" onClick={() => setActive(2)}>
+                        Papers ({info?.paperCount})
+                    </button>
+                </div>
             </div>
-            <div>
-                {/* data map here */}
+            <div className="container paper__wrapper">
+                <SideBar />
                 <div>
-                    <div>
-                        <img src={notes} alt="" />
-                        <div>
-                            <p>
-                                Estimation of the warfarin dose with clinical
-                                and pharmacogenetic data
-                            </p>
-                            <p>
-                                Angel investor, Formerly CTO of coinbase and GP
-                                at Andreessen horowitz, Cofounder of earn
-                                counsyl teleport and coin center.
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src={dollar} alt="" />
-                            <span>APR 9301%</span>
-                        </div>
-                        <div>
-                            <img src={number} alt="" />
-                            <span>9301</span>
-                        </div>
-                        <div>
-                            <img src={bookmark} alt="" />
-                            <span>870</span>
-                        </div>
-                        <div>
-                            <img src={calender} alt="" />
-                            <span>2021</span>
-                        </div>
-                    </div>
+                    <p className="title__text">Papers</p>
+                    {info.papers.map((paper) => (
+                        <FeaturedPapers
+                            key={paper.paperId}
+                            paper={paper}
+                            info={info}
+                        ></FeaturedPapers>
+                    ))}
                 </div>
-                <div>
-                    <div>
-                        <img src={notes} alt="" />
-                        <div>
-                            <p>
-                                Estimation of the warfarin dose with clinical
-                                and pharmacogenetic data
-                            </p>
-                            <p>
-                                Angel investor, Formerly CTO of coinbase and GP
-                                at Andreessen horowitz, Cofounder of earn
-                                counsyl teleport and coin center.
-                            </p>
-                        </div>
-                    </div>
+                {/* {info?.papers?.map((x) => (
                     <div>
                         <div>
-                            <img src={dollar} alt="" />
-                            <span>APR 9301%</span>
+                            <img src={notes} alt="" />
+                            <div>
+                                <p>
+                                    <Link>{x.paperTitle}</Link>
+                                </p>
+                            </div>
                         </div>
                         <div>
-                            <img src={number} alt="" />
-                            <span>9301</span>
-                        </div>
-                        <div>
-                            <img src={bookmark} alt="" />
-                            <span>870</span>
-                        </div>
-                        <div>
-                            <img src={calender} alt="" />
-                            <span>2021</span>
+                            <div>
+                                <Tippy content="Investment Return">
+                                    <img src={dollar} alt="" />
+                                </Tippy>
+                                <span>
+                                    APR{" "}
+                                    {(
+                                        (info.prbScore * 1000) /
+                                        Math.max(
+                                            1,
+                                            ((info.prbScore +
+                                                0.005 -
+                                                (x.year -
+                                                    new Date().getFullYear()) /
+                                                    50) /
+                                                10) *
+                                                1000
+                                        )
+                                    ).toFixed(2)}
+                                    %
+                                </span>
+                            </div>
+                            <div>
+                                <Tippy content="Market Price">
+                                    <img src={number} alt="" />
+                                </Tippy>
+                                <span>
+                                    {Math.max(
+                                        1,
+                                        ((info.prbScore +
+                                            0.005 -
+                                            (x.year -
+                                                new Date().getFullYear()) /
+                                                50) /
+                                            10) *
+                                            1000
+                                    ).toFixed(2)}
+                                </span>
+                            </div>
+                            <div>
+                                <Tippy content="Citation Count">
+                                    <img src={bookmark} alt="" />
+                                </Tippy>
+                                <span>{x.citationCount}</span>
+                            </div>
+                            <div>
+                                <Tippy content="Publication Date">
+                                    <img src={calender} alt="" />
+                                </Tippy>
+                                <span>{x.date.slice(0, 4)}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                ))} */}
             </div>
         </div>
     );

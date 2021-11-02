@@ -1,0 +1,152 @@
+.onBoarding {
+    display: flex;
+    > div {
+        min-height: 100vh;
+        &:nth-of-type(1) {
+            width: 407px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            @include breakpoints-down(large) {
+                width: 30vw;
+            }
+            @include breakpoints-down(medium) {
+                display: none;
+            }
+        }
+        &:nth-of-type(2) {
+            flex: 1;
+        }
+    }
+}
+
+.getStart {
+    > div:nth-of-type(2) {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        > div {
+            width: 550px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @include breakpoints-down(small) {
+                width: 100%;
+
+                padding: 0px;
+                > div {
+                    width: 90%;
+                }
+            }
+
+            > p {
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 120%;
+
+                color: #131416;
+                margin-bottom: 20px;
+            }
+            > form {
+                display: flex;
+                flex-direction: column;
+                max-width: 430px;
+                .MuiFormControl-root {
+                    margin: 12px 0px;
+                }
+                .MuiInput-root::before {
+                    border-bottom: 1px solid #eaeaea;
+                }
+                .MuiButtonBase-root {
+                    background: $theme-color;
+                    text-transform: capitalize;
+                    margin: 20px auto;
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+.mailChimp__Form__Container {
+    @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+    .info-msg,
+    .success-msg,
+    .warning-msg,
+    .error-msg {
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 3px 3px 3px 3px;
+    }
+    .info-msg {
+        color: #059;
+        background-color: #bef;
+    }
+    .success-msg {
+        color: #270;
+        background-color: #dff2bf;
+    }
+    .warning-msg {
+        color: #9f6000;
+        background-color: #feefb3;
+    }
+    .error-msg {
+        color: #d8000c;
+        background-color: #ffbaba;
+    }
+}
+
+.mailChimp__Form {
+    width: 400px;
+    @include breakpoints-down(small) {
+        width: 95%;
+    }
+    margin: 0px auto;
+    > div {
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            input {
+                width: 100%;
+                border: none;
+                margin: 10px 0px;
+                border-bottom: 1px solid #eaeaea;
+                padding: 10px 5px;
+                &:focus {
+                    outline: none;
+                    border-bottom: 2px solid $theme-color;
+                }
+            }
+            ::placeholder {
+                font-size: 16px;
+            }
+        }
+        .button {
+            margin: 20px auto;
+            background-color: $theme-color;
+            cursor: pointer;
+            border: none;
+            color: white;
+            width: 300px;
+            height: 54px;
+
+            background: #b68e5c;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            &:hover {
+                transform: translateY(-3px);
+            }
+            &:disabled {
+                opacity: 0.8;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.developers__section {
+    font-family: Inter;
+    .developers__wrapper {
+        text-align: center;
+        vertical-align: middle;
+        padding: 10rem 0;
+        background-color: $dark-bg;
+        color: #fff;
+        @include breakpoints-down(medium) {
+            padding: 7rem 0;
+        }
+        & > h2 {
+            font-size: 48px;
+            font-weight: 400;
+            @include breakpoints-down(small) {
+                font-size: 36px;
+            }
+        }
+        & > p {
+            color: #b2b2b2;
+            margin: 0 auto;
+            max-width: 777px;
+            line-height: 160%;
+            padding: 35px 0;
+            @include breakpoints-down(medium) {
+                max-width: 100%;
+                padding: 35px 2rem;
+            }
+        }
+        & button {
+            @include button-basic(183px, 48px, #b68e5c, #fff);
+        }
+    }
+    .open__knowledge {
+        text-align: center;
+        height: 600px;
+        @include positionCenter;
+        flex-direction: column;
+        gap: 58px;
+        @include breakpoints-down(medium) {
+            height: 400px;
+        }
+        & > h2 {
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 50px;
+            max-width: 632px;
+            @include breakpoints-down(small) {
+                font-size: 32px;
+            }
+        }
+        & > div {
+            @include positionCenter;
+            gap: 1.5rem;
+            @include breakpoints-down(small) {
+                gap: 1rem;
+            }
+            @include breakpoints-down(x-small) {
+                gap: 0.5rem;
+            }
+            .info__single {
+                @include positionCenter;
+                flex-direction: column;
+                color: #131416;
+                width: 268px;
+                height: 168px;
+                background: #f2f3f7;
+                border-radius: 4px;
+                @include breakpoints-down(medium) {
+                    width: 200px;
+                    height: 168px;
+                }
+                @include breakpoints-down(small) {
+                    width: 120px;
+                    height: 100px;
+                }
+                @include breakpoints-down(x-small) {
+                    width: 95px;
+                    height: 80px;
+                }
+                & > h2 {
+                    font-weight: 300;
+                    font-size: 48px;
+                    @include breakpoints-down(medium) {
+                        font-size: 34px;
+                    }
+                    @include breakpoints-down(small) {
+                        font-size: 24px;
+                    }
+                    @include breakpoints-down(x-small) {
+                        font-size: 18px;
+                    }
+                }
+                & > p {
+                    font-size: 24px;
+                    @include breakpoints-down(medium) {
+                        font-size: 16px;
+                    }
+                    @include breakpoints-down(x-small) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .neural-network-img {
+        min-height: 90vh;
+        background: black;
+        position: relative;
+
+        #tsparticles {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            bottom: 0%;
+            right: 0%;
+            width: 100%;
+            z-index: 1;
+        }
+        // @include positionCenter;
+        // > img {
+        //     width: 100%;
+        // }
+    }
+}

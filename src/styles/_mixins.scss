@@ -8,10 +8,11 @@ $breakpoints-up: (
 //40px 639px 1023px 1399px
 $breakpoints-down: (
     "x-small": "375px",
-    "small": "425px",
+    "small": "475px",
     "medium": "768px",
     "large": "1024px",
     "x-large": "1440px",
+    "special": "1320px",
 );
 
 @mixin breakpoints-up($size) {
@@ -38,8 +39,37 @@ $breakpoints-down: (
     font-weight: 500;
     font-size: 16px;
     color: $color;
+    transition: all 0.2s;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
     &:hover {
-        transition: all 0.3s;
         transform: translateY(-3px);
+    }
+}
+@mixin positionCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin info {
+    max-width: 385px;
+    margin-bottom: 32px;
+
+    & > h2 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: $dark-bg;
+        min-height: 48px;
+    }
+    & > p {
+        font-size: 16px;
+        line-height: 160%;
+        color: #7c7d8c;
+        padding: 14px 0;
     }
 }
