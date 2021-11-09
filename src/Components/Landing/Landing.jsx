@@ -8,7 +8,7 @@ import Particle from "../Particle/Particle";
 import img1 from "../../images/open access.png";
 import img2 from "../../images/open source.png";
 import img3 from "../../images/non profit.png";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 const Landing = () => {
     let history = useHistory();
     // const [result, setResult] = useState({
