@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import TextField from "@mui/material/TextField";
+import React, { useState } from "react";
+// import TextField from "@mui/material/TextField";
 import girl from "../../../images/girl-smile.png";
-import { Button } from "@material-ui/core";
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+// import { Button } from "@material-ui/core";
+// import { useForm } from "react-hook-form";
+// import { yupResolver } from "@hookform/resolvers/yup";
+// import * as yup from "yup";
 import NewsLetterSubs from "./NewsLetterSubs";
 
 // const schema = yup.object().shape({
@@ -15,10 +15,10 @@ import NewsLetterSubs from "./NewsLetterSubs";
 // });
 
 const GetStart = ({ handleGetStart, step, setStep }) => {
-    const [firstNameData, setFirstNameData] = useState("");
-    const [lastNameData, setLastNameData] = useState("");
-    const [instNameData, setInstNameData] = useState("");
-    const [emailData, setEmailData] = useState("");
+//     const [firstNameData, setFirstNameData] = useState("");
+//     const [lastNameData, setLastNameData] = useState("");
+//     const [instNameData, setInstNameData] = useState("");
+//     const [emailData, setEmailData] = useState("");
     // const {
     //     register,
     //     handleSubmit,
