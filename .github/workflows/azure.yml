@@ -24,8 +24,7 @@ jobs:
       - name: npm install, build, and test
         run: |
           CI=false
-          npm install
-          npm run build --if-present
+          yarn
 #          npm run test --if-present
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -54,3 +53,7 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9E3E1DA78DDA4940A0EFAD7796B76BE6 }}
           package: .
+          
+      - name: 'Start Website'
+        run: |
+          yarn start
