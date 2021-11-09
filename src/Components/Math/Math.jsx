@@ -3,7 +3,7 @@ import Nav from "../Nav/Nav";
 import Problem from "../../Components/Math/Problem/Problem";
 
 const Math = () => {
-    const [show, setshow] = useState(false);
+    const [show] = useState(false);
     return (
         <div className="math__section">
             <Nav show={() => show(true)} />
