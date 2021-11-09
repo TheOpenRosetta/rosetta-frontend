@@ -22,6 +22,7 @@ const ProfileBody = () => {
                 .then((response) => response.json())
                 .then((data) => setInfo(data[0]));
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id, name]);
     // console.log(info);
     const override = css`

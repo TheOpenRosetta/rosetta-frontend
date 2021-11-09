@@ -16,6 +16,7 @@ const OnBoarding = () => {
             setUser(data);
             setStep(2);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
         <div>

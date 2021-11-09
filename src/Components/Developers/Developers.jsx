@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
-import img from "../../images/neural-network.png";
+// import img from "../../images/neural-network.png";
 import Particles from "react-particles-js";
 const Developers = () => {
     return (

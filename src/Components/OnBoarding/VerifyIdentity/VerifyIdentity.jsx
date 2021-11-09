@@ -38,6 +38,7 @@ const VerifyIdentity = ({ user, setStep }) => {
         } else {
             setStep(1);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user]);
 
     return (
@@ -133,6 +134,7 @@ const AuthorProfile = ({ data, user, setDis }) => {
             setClaim(false);
             setDis(true);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [data]);
     const handleClaim = (id) => {
         if (user.authorId == null) {

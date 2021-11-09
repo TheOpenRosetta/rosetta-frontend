@@ -12,7 +12,7 @@ import Feature from "./Components/Feature";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import About from "./Components/About/About";
 import Developers from "./Components/Developers/Developers";
-import GetStart from "./Components/OnBoarding/GetStart/GetStart";
+// import GetStart from "./Components/OnBoarding/GetStart/GetStart";
 import VerifyIdentity from "./Components/OnBoarding/VerifyIdentity/VerifyIdentity";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import OnBoarding from "./Components/OnBoarding";
