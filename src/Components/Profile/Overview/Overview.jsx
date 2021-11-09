@@ -5,7 +5,7 @@ import React from "react";
 // import bookmark from "../../../images/bookmark.png";
 // import number from "../../../images/number.png";
 // import { Link } from "react-router-dom";
-import Tippy from "@tippyjs/react";
+// import Tippy from "@tippyjs/react";
 import FeaturedPapers from "../FeaturedPapers/FeaturedPapers";
 import "tippy.js/dist/tippy.css";
 import SideBar from "../SideBar/SideBar";
