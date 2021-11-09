@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import GetStart from "./GetStart/GetStart";
-import VerifyIdentity from "./VerifyIdentity/VerifyIdentity";
-import VerifyPapers from "./VerifyPapers/VerifyPapers";
+// import VerifyIdentity from "./VerifyIdentity/VerifyIdentity";
+// import VerifyPapers from "./VerifyPapers/VerifyPapers";
 
 const OnBoarding = () => {
     const [step, setStep] = useState(1);
-    const [user, setUser] = useState(null);
+    const [setUser] = useState(null);
     const handleGetStart = (user) => {
         setUser(user);
         sessionStorage.setItem("user", JSON.stringify(user));
