@@ -1,10 +1,10 @@
 import React from "react";
-import notes from "../../../images/notes.png";
-import dollar from "../../../images/dollar.png";
-import calender from "../../../images/calender.png";
-import bookmark from "../../../images/bookmark.png";
-import number from "../../../images/number.png";
-import { Link } from "react-router-dom";
+// import notes from "../../../images/notes.png";
+// import dollar from "../../../images/dollar.png";
+// import calender from "../../../images/calender.png";
+// import bookmark from "../../../images/bookmark.png";
+// import number from "../../../images/number.png";
+// import { Link } from "react-router-dom";
 import FeaturedPapers from "../FeaturedPapers/FeaturedPapers";
 import SideBar from "../SideBar/SideBar";
 const Papers = ({ setActive, info }) => {
