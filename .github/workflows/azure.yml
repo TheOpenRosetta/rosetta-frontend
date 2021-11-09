@@ -51,9 +51,6 @@ jobs:
           CI=false
           yarn
 #          npm run test --if-present
-        
-      - name: start app
-        run: yarn start
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
