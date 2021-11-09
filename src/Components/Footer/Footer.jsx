@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useState } from "react";
 import twitter from "../../images/twitter.svg";
 import facebook from "../../images/facebook.svg";
