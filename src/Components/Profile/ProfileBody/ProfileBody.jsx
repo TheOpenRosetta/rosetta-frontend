@@ -10,10 +10,10 @@ const ProfileBody = () => {
     const { id, name } = useParams();
     const [active, setActive] = useState(1);
     const [info, setInfo] = useState("");
-    const [authors, setAuthors] = useContext(DataContext);
+    const [authors] = useContext(DataContext);
     useEffect(() => {
         if (authors.length !== 0) {
-            const author = authors.find((x) => x.authorId == id);
+            const author = authors.find((x) => x.authorId === id);
             setInfo(author);
         } else {
             fetch(
