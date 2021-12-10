@@ -30,9 +30,22 @@
         .bottom__text__wrapper {
             display: grid;
             gap: 75px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            @include breakpoints-down(medium) {
-                grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            // @include breakpoints-down(medium) {
+            //     grid-template-columns: 1fr 1fr;
+            // }
+            &-col {
+              flex: 1;
+              text-align: start;
+              &-title {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 48px;
+                line-height: 120%;
+                text-align: center;
+                margin-bottom: 12px;
+              }
             }
             @include breakpoints-down(small) {
                 grid-template-columns: 1fr;

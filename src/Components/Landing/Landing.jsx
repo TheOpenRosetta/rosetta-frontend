@@ -65,19 +65,10 @@ const Landing = () => {
             <div className="container">
                 <p>Introducing Rosetta</p>
                 <h1>
-                    The new peer-to-peer social publishing network owned by
-                    authors
+                    The new peer-to-peer academic social collaborative network owned by authors
                 </h1>
                 <p>
-                    <span>
-                        Join the open access publishing movement on a fully open
-                        source social network where authors now earn ownership
-                        in the network by contributing to the knowledge commons.
-                    </span>{" "}
-                    The average paper published earns the author $1,000 a year
-                    in ownership rewards on our network based on its
-                    ImpactScore, and recieves 70% more citations over it’s
-                    lifetime by publishing open access.
+                    Rosetta is the most powerful social platform to share your knowledge, and earn just by publishing open access replicable quality papers. The average paper published earns the author $1,000 a year in ownership rewards on our network based on its ImpactScore, and gets archived permenantly on the most powerful distributed network to ensure your knowledge can never be destroyed.
                 </p>
                 {/* <div className="search__box">
                     <form onSubmit={handleForm}>

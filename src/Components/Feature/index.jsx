@@ -2,10 +2,10 @@ import React from "react";
 import Footer from "../Footer/Footer";
 import Nav from "../Nav/Nav";
 import AuthorControl from "./AuthorsControl/AuthorControl";
-import DigitalPublishing from "./DigitalPublishing/DigitalPublishing";
+// import DigitalPublishing from "./DigitalPublishing/DigitalPublishing";
 import Discover from "./Discover/Discover";
 import FeatureTop from "./FeatureTop/FeatureTop";
-import GordianMarket from "./GordianMarket/GordianMarket";
+// import GordianMarket from "./GordianMarket/GordianMarket";
 import ImpactScore from "./ImpactScore/ImpactScore";
 import MarketPaper from "./MarketPaper/MarketPaper";
 import NonProfit from "./Non-Profit/NonProfit";
@@ -20,9 +20,13 @@ const Feature = () => {
             <ImpactScore />
             <ReviewWork />
             <MarketPaper />
-            <DigitalPublishing />
+            {
+              // <DigitalPublishing />
+            }
             <Discover></Discover>
-            <GordianMarket />
+            {
+              // <GordianMarket />
+            }
             <NonProfit />
             <Footer></Footer>
         </div>
