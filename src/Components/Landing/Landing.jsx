@@ -14,7 +14,7 @@ const Landing = () => {
               <div className="container">
                   <p>Introducing Rosetta:</p>
                   <h1>
-                      The new scientist owned collaborative network with open markets for knowledge for any scientist to own, and earn.
+                      The new way for scientists to own, earn, and distribute their knowledge with open markets.
                   </h1>
                   <p>
                       Now the average paper published earns the author $1,000 a year in ownership rewards, and gets archived permenantly on the most powerful persistent repository to ensure your knowledge can never be destroyed.
