@@ -1,5 +1,6 @@
 import React from "react";
 import Particle from "../Particle/Particle";
+import HowItWorks from "../HowItWorks";
 import img1 from "../../images/open access.png";
 import img2 from "../../images/open source.png";
 import img3 from "../../images/non profit.png";
@@ -70,6 +71,7 @@ const Landing = () => {
               </div>
             </div>
           </section>
+          <HowItWorks />
           <section className="landing__ownership">
             <div className="container">
               <div className="ownership__text">

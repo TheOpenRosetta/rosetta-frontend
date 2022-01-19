@@ -1,9 +1,9 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import Nav from "../Nav/Nav";
-import AuthorControl from "./AuthorsControl/AuthorControl";
+// import AuthorControl from "./AuthorsControl/AuthorControl";
 // import DigitalPublishing from "./DigitalPublishing/DigitalPublishing";
-import Discover from "./Discover/Discover";
+// import Discover from "./Discover/Discover";
 import FeatureTop from "./FeatureTop/FeatureTop";
 // import GordianMarket from "./GordianMarket/GordianMarket";
 import ImpactScore from "./ImpactScore/ImpactScore";
@@ -16,14 +16,18 @@ const Feature = () => {
         <div>
             <Nav />
             <FeatureTop />
-            <AuthorControl />
+            {
+              // <AuthorControl />
+            }
             <ImpactScore />
             <ReviewWork />
             <MarketPaper />
             {
               // <DigitalPublishing />
             }
-            <Discover></Discover>
+            {
+              // <Discover></Discover>
+            }
             {
               // <GordianMarket />
             }
