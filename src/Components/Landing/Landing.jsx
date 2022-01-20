@@ -18,7 +18,7 @@ const Landing = () => {
                       The new way for scientists to own, earn, and distribute their knowledge with open markets.
                   </h1>
                   <p>
-                      Now the average paper published earns the author $1,000 a year in ownership rewards, and gets archived permenantly on the most powerful persistent repository to ensure your knowledge can never be destroyed.
+                      The easiest way to instantly publish open access for free, and earn rewards. The average paper earns $1000 rewards, and gets your knowledge archived permanently on the most powerful permissionless repository.
                   </p>
                   <div className="two__btn">
                       <button className="btn btn__primary" onClick={() => history.push("/start/")}>
