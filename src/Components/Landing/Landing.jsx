@@ -4,7 +4,16 @@ import HowItWorks from "../HowItWorks";
 import img1 from "../../images/open access.png";
 import img2 from "../../images/open source.png";
 import img3 from "../../images/non profit.png";
+import demo from "../../images/demo.png";
 import { useHistory } from "react-router-dom";
+
+import why1 from "../../images/why/1.png";
+import why2 from "../../images/why/2.png";
+import why3 from "../../images/why/3.png";
+import why4 from "../../images/why/4.png";
+import why5 from "../../images/why/5.png";
+import why6 from "../../images/why/6.png";
+
 
 const Landing = () => {
     let history = useHistory();
@@ -13,22 +22,17 @@ const Landing = () => {
           <section className="hero">
               <Particle></Particle>
               <div className="container">
-                  <p>Introducing Rosetta:</p>
-                  <h1>
-                      The new way for scientists to own, earn, and distribute their knowledge with open markets.
-                  </h1>
-                  <p>
-                      The easiest way to instantly publish open access for free, and earn rewards. The average paper earns $1000 rewards, and gets your knowledge archived permanently on the most powerful permissionless repository.
-                  </p>
-                  <div className="two__btn">
+                  <div className="hero__row">
+                    <div className="hero__benefits">
+                      <div className="hero__title">There’s now a better way to publish pre-prints open access for free</div>
+                      <div className="hero__text">Instant publishing, zero gatekeepers. Permanent archiving. Zero rank order. Weighted citations. Incentives for replicable work. Earn rewards worth real money for your Impact.</div>
                       <button className="btn btn__primary" onClick={() => history.push("/start/")}>
                           Get Early Access
                       </button>
-                  </div>
-                  <div className="three__img">
-                      <img src={img1} alt="illustration 1" />
-                      <img src={img3} alt="illustration 2" />
-                      <img src={img2} alt="illustration 3" />
+                    </div>
+                    <div className="hero__image">
+                      <img src={demo} alt="Demo" />
+                    </div>
                   </div>
               </div>
               <div className="graph__stats">
@@ -69,6 +73,96 @@ const Landing = () => {
                   </button>
                 </div>
               </div>
+            </div>
+          </section>
+          <section className="landing__why">
+            <div className="container">
+              <div className="landing__why-title">Why Rosetta</div>
+              <div className="why__list">
+                <div className="why__list-item">
+                  <div className="why__content">
+                    <div className="why__title">Incentivised replication, and discussion papers</div>
+                    <div className="why__text">
+                      <i>All papers have reward pools for anyone to replicate, and discuss the paper</i>
+                      Peer review is sometimes lacking, and behind closed doors. Get your peers to improve your work openly before you publish elsewhere. Clarifications, successful replication, explore the boundaries of datasets, and discover what properties the knowledge might work, or not work for.
+                    </div>
+                  </div>
+                  <div className="why__image">
+                    <img src={why2} alt="Incentivised replication, and discussion papers" />
+                  </div>
+                </div>
+                <div className="why__list-item">
+                  <div className="why__content">
+                    <div className="why__title">Earn citations for all non-traditional research artifacts</div>
+                    <div className="why__text">
+                      <i>All knowledge is welcome to be submitted, not just papers</i>
+                      Not all knowledge is contained in a paper format. Now you can earn citations for work that traditional publishers discard, but the scientific community loves: notebooks, datasets, graphs, visualisations, and more
+                    </div>
+                  </div>
+                  <div className="why__image">
+                    <img src={why6} alt="Earn citations for all non-traditional research artifacts" />
+                  </div>
+                </div>
+                <div className="why__list-item">
+                  <div className="why__content">
+                    <div className="why__title">Forget rank-order, and static citations</div>
+                    <div className="why__text">
+                      <i>Not every contribution is equal</i>
+                      Enter the percentage weight of co-authors, and the influence a citation had on the work at the time of publication for fairness
+                    </div>
+                  </div>
+                  <div className="why__image">
+                    <img src={why5} alt="Forget rank-order, and static citations" />
+                  </div>
+                </div>
+                <div className="why__list-item">
+                  <div className="why__content">
+                    <div className="why__title">Permanent Archiving</div>
+                    <div className="why__text">
+                      <i>Ensure your knowledge survives forever</i>
+                      Dead links are a thing of the past. All knowledge is published to Arweave, a distributed network with true information persistence
+                    </div>
+                  </div>
+                  <div className="why__image">
+                    <img src={why4} alt="Permanent Archiving" />
+                  </div>
+                </div>
+                <div className="why__list-item">
+                  <div className="why__content">
+                    <div className="why__title">Earn rewards for Impact</div>
+                    <div className="why__text">
+                      <i>Over time rewards accrue to papers with Impact</i>
+                      The average paper in the network earns $1000 worth of rewards per annum that get distributed to the co-authors of the knowledge
+                    </div>
+                  </div>
+                  <div className="why__image">
+                    <img src={why3} alt="Earn rewards for Impact" />
+                  </div>
+                </div>
+                <div className="why__list-item">
+                  <div className="why__content">
+                    <div className="why__title">100% Open Source</div>
+                    <div className="why__text">
+                      <i>Owned by the community</i>
+                      Rosetta is open-source, and community owned meaning anyone can upgrade it. Authors earn ownership rewards in the network that allows them to vote for upgrades that benefit everyone
+                    </div>
+                  </div>
+                  <div className="why__image">
+                    <img src={why1} alt="100% Open Source" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="landing__institutes">
+            <div className="container">
+              <div className="institutes__title">
+                Authors from these institutions are in line for early access:
+              </div>
+              <div className="institutes__text">Oxford, Harvard, MIT, NUS, Stanford, OpenAI</div>
+              <button className="btn btn__primary" onClick={() => history.push("/start/")}>
+                  Get Early Access
+              </button>
             </div>
           </section>
           <HowItWorks />
