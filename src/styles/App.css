@@ -1168,6 +1168,20 @@ a {
   margin-bottom: 32px;
 }
 
+.institutes__logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0 0;
+}
+
+.institutes__logos img {
+  height: 48px;
+  margin: 0 32px 32px;
+}
+
 .landing__ownership {
   background-color: #131416;
   text-align: center;

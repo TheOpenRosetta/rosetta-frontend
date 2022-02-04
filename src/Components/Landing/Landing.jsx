@@ -1,9 +1,13 @@
 import React from "react";
 import Particle from "../Particle/Particle";
-import HowItWorks from "../HowItWorks";
-import img1 from "../../images/open access.png";
-import img2 from "../../images/open source.png";
-import img3 from "../../images/non profit.png";
+// import HowItWorks from "../HowItWorks";
+import harvardLogo from "../../images/logos/harvard.svg";
+import mitLogo from "../../images/logos/mit.png";
+import nusLogo from "../../images/logos/nus.png";
+import openaiLogo from "../../images/logos/openai.png";
+import oxfordLogo from "../../images/logos/oxweb.svg";
+import stanfordLogo from "../../images/logos/stanford.png";
+
 import demo from "../../images/demo.png";
 import { useHistory } from "react-router-dom";
 
@@ -161,7 +165,14 @@ const Landing = () => {
               <div className="institutes__title">
                 Authors from these institutions are in line for early access:
               </div>
-              <div className="institutes__text">Oxford, Harvard, MIT, NUS, Stanford, OpenAI</div>
+              <div className="institutes__logos">
+                <img src={oxfordLogo} alt="oxford" />
+                <img src={harvardLogo} alt="harvard" />
+                <img src={mitLogo} alt="mit" />
+                <img src={nusLogo} alt="nus" />
+                <img src={stanfordLogo} alt="stanford" />
+                <img src={openaiLogo} alt="openai" />
+              </div>
               <button className="btn btn__primary" onClick={() => history.push("/start/")}>
                   Get Early Access
               </button>
@@ -169,19 +180,20 @@ const Landing = () => {
           </section>
           {
             // <HowItWorks />
+            // <section className="landing__ownership">
+            //   <div className="container">
+            //     <div className="ownership__text">
+            //       Over <span>271+ Million</span> authors can now see how much ownership, and extra income you can claim from your past papers in under 2 minutes.
+            //     </div>
+            //     <div className="ownership__logos">
+            //       <img src={img1} alt="illustration 1" />
+            //       <img src={img3} alt="illustration 2" />
+            //       <img src={img2} alt="illustration 3" />
+            //     </div>
+            //   </div>
+            // </section>
           }
-          <section className="landing__ownership">
-            <div className="container">
-              <div className="ownership__text">
-                Over <span>271+ Million</span> authors can now see how much ownership, and extra income you can claim from your past papers in under 2 minutes.
-              </div>
-              <div className="ownership__logos">
-                <img src={img1} alt="illustration 1" />
-                <img src={img3} alt="illustration 2" />
-                <img src={img2} alt="illustration 3" />
-              </div>
-            </div>
-          </section>
+
         </>
     );
 };
