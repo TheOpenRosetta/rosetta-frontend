@@ -59,22 +59,24 @@ const Landing = () => {
                   </div>
               </div>
           </section>
-          <section className="landing__description">
-            <div className="container">
-              <div className="description">
-                <div className="description__title">The most powerful social platform for discovery, and distribution.</div>
-                <div className="description__text">
-                  <p>Now you can earn by publishing open access replicable quality papers for free.</p>
-                  <p>When you publish on Rosetta’s open access permissionless persistent repository, you create a market for your paper that you own, and earn the rewards based on it’s Impact.</p>
-                </div>
-                <div className="description__btn">
-                  <button className="btn" onClick={() => history.push("/features/")}>
-                      Learn more
-                  </button>
-                </div>
-              </div>
-            </div>
-          </section>
+          {
+            // <section className="landing__description">
+            //   <div className="container">
+            //     <div className="description">
+            //       <div className="description__title">The most powerful social platform for discovery, and distribution.</div>
+            //       <div className="description__text">
+            //         <p>Now you can earn by publishing open access replicable quality papers for free.</p>
+            //         <p>When you publish on Rosetta’s open access permissionless persistent repository, you create a market for your paper that you own, and earn the rewards based on it’s Impact.</p>
+            //       </div>
+            //       <div className="description__btn">
+            //         <button className="btn" onClick={() => history.push("/features/")}>
+            //             Learn more
+            //         </button>
+            //       </div>
+            //     </div>
+            //   </div>
+            // </section>
+          }
           <section className="landing__why">
             <div className="container">
               <div className="landing__why-title">Why Rosetta</div>
@@ -165,7 +167,9 @@ const Landing = () => {
               </button>
             </div>
           </section>
-          <HowItWorks />
+          {
+            // <HowItWorks />
+          }
           <section className="landing__ownership">
             <div className="container">
               <div className="ownership__text">
