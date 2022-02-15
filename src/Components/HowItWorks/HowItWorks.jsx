@@ -8,23 +8,18 @@ const HowItWorks = () => (
       <div className="landing__works-title">How it works</div>
       <div className="landing__works-steps">
         <div className="landing__works-step">
-          <div className="landing__works-step-title">1. Start by Publishing Open Access for Free</div>
-          <div className="landing__works-step-text">Publish your paper on Rosetta instantly, alongside all your research outputs for free. Just pay the small storage costs (insert rough guess of $ per gb) to ensure your knowledge gets stored permanently.</div>
+          <div className="landing__works-step-title">1. Publish & share</div>
+          <div className="landing__works-step-text">Everytime an author publishes a piece of knowledge or artefact a unique set of knowledge tokens are created, and divided between the authors.</div>
         </div>
         <LineOdd className="landing__works-step-curve" />
         <div className="landing__works-step">
-          <div className="landing__works-step-title">2. Own your work</div>
-          <div className="landing__works-step-text">After you publish your paper a new set of unique knowledge tokens are created. You, and your co-authors own the knowledge tokens for it, which you can sell at any time, or hold to earn Rosetta rewards.</div>
+          <div className="landing__works-step-title">2. Distributed Review</div>
+          <div className="landing__works-step-text">Truthful science is whether a piece of knowledge replicates, not what peer reviewers say behind closed doors. Once published a reward pool is available for anyone to replicate, and attempt falsification on the work as well as discussing the knowledge to improve upon it.</div>
         </div>
         <LineEven className="landing__works-step-curve" />
         <div className="landing__works-step">
-          <div className="landing__works-step-title">3. Earn from Quality Knowledge</div>
-          <div className="landing__works-step-text">New Rosetta rewards are minted over time, and distributed weekly to papers in the network based on their ImpactScore. This unlocks the ability for the owners of quality knowledge tokens to earn.</div>
-        </div>
-        <LineOdd className="landing__works-step-curve" />
-        <div className="landing__works-step">
-          <div className="landing__works-step-title">4. The Pursuit of Truth</div>
-          <div className="landing__works-step-text">As your paper earns Rosetta tokens, some of those go into a replication pool to incentivise other authors to replicate the work, and ensure its truthfulness. Validators earn Rosetta rewards for replicating, discovering fraud, and providing critically enquiry on papers.</div>
+          <div className="landing__works-step-title">3. Earn</div>
+          <div className="landing__works-step-text">Over time $Rosetta rewards accrue to the owners of the knowledge tokens based on their Impact with the average paper earning $1,000 per annum. The knowledge tokens can be bought, and sold at any time to give new quality signals.</div>
         </div>
       </div>
     </div>

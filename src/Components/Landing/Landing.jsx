@@ -1,6 +1,5 @@
 import React from "react";
-import Particle from "../Particle/Particle";
-// import HowItWorks from "../HowItWorks";
+import HowItWorks from "../HowItWorks";
 import harvardLogo from "../../images/logos/harvard.svg";
 import mitLogo from "../../images/logos/mit.png";
 import nusLogo from "../../images/logos/nus.png";
@@ -13,7 +12,7 @@ import { useHistory } from "react-router-dom";
 
 import why1 from "../../images/why/1.png";
 import why2 from "../../images/why/2.png";
-import why3 from "../../images/why/3.png";
+// import why3 from "../../images/why/3.png";
 import why4 from "../../images/why/4.png";
 import why5 from "../../images/why/5.png";
 import why6 from "../../images/why/6.png";
@@ -24,12 +23,11 @@ const Landing = () => {
     return (
         <>
           <section className="hero">
-              <Particle></Particle>
               <div className="container">
                   <div className="hero__row">
                     <div className="hero__benefits">
                       <div className="hero__title">There’s now a better way to publish pre-prints open access for free</div>
-                      <div className="hero__text">Instant publishing, zero gatekeepers. Permanent archiving. Zero rank order. Weighted citations. Incentives for replicable work. Earn rewards worth real money for your Impact.</div>
+                      <div className="hero__text">Earn rewards worth real money through open markets for knowledge. Instant free open access publishing with zero gatekeepers. Permanent archiving. Zero rank order. Weighted citations. Incentivised replication for falsification through time.</div>
                       <button className="btn btn__primary" onClick={() => history.push("/start/")}>
                           Get Early Access
                       </button>
@@ -90,7 +88,7 @@ const Landing = () => {
                     <div className="why__title">Incentivised replication, and discussion papers</div>
                     <div className="why__text">
                       <i>All papers have reward pools for anyone to replicate, and discuss the paper</i>
-                      Peer review is sometimes lacking, and behind closed doors. Get your peers to improve your work openly before you publish elsewhere. Clarifications, successful replication, explore the boundaries of datasets, and discover what properties the knowledge might work, or not work for.
+                      Get your peers to review, and discuss your work before publishing elsewhere. Improve your work with clarifications, replication attempts to prove truth, exploration of the limits of datasets provided, and what uses the knowledge may work, or not work for.
                     </div>
                   </div>
                   <div className="why__image">
@@ -135,22 +133,13 @@ const Landing = () => {
                 </div>
                 <div className="why__list-item">
                   <div className="why__content">
-                    <div className="why__title">Earn rewards for Impact</div>
-                    <div className="why__text">
-                      <i>Over time rewards accrue to papers with Impact</i>
-                      The average paper in the network earns $1000 worth of rewards per annum that get distributed to the co-authors of the knowledge
-                    </div>
-                  </div>
-                  <div className="why__image">
-                    <img src={why3} alt="Earn rewards for Impact" />
-                  </div>
-                </div>
-                <div className="why__list-item">
-                  <div className="why__content">
                     <div className="why__title">100% Open Source</div>
                     <div className="why__text">
-                      <i>Owned by the community</i>
-                      Rosetta is open-source, and community owned meaning anyone can upgrade it. Authors earn ownership rewards in the network that allows them to vote for upgrades that benefit everyone
+                      <i>Community owned, and operated.</i>
+                      Rosetta is open-source, independant, and 100% community owned by its users.
+                      <br/>
+                      <br/>
+                      <b>No investors. No bullshit.</b>
                     </div>
                   </div>
                   <div className="why__image">
@@ -178,8 +167,9 @@ const Landing = () => {
               </button>
             </div>
           </section>
+          <HowItWorks />
           {
-            // <HowItWorks />
+
             // <section className="landing__ownership">
             //   <div className="container">
             //     <div className="ownership__text">
