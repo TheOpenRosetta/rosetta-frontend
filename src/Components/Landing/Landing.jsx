@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import HowItWorks from "../HowItWorks";
 import harvardLogo from "../../images/logos/harvard.svg";
 import mitLogo from "../../images/logos/mit.png";
@@ -20,6 +21,10 @@ import why6 from "../../images/why/6.png";
 
 const Landing = () => {
     let history = useHistory();
+
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+    }, []);
     return (
         <>
           <section className="hero">
@@ -84,7 +89,7 @@ const Landing = () => {
             <div className="container">
               <div className="landing__why-title">Why Rosetta</div>
               <div className="why__list">
-                <div className="why__list-item">
+                <div className="why__list-item"  data-aos="fade-up">
                   <div className="why__content">
                     <div className="why__title">Incentivised replication, and discussion papers</div>
                     <div className="why__text">
@@ -96,7 +101,7 @@ const Landing = () => {
                     <img src={why2} alt="Incentivised replication, and discussion papers" />
                   </div>
                 </div>
-                <div className="why__list-item">
+                <div className="why__list-item"  data-aos="fade-up">
                   <div className="why__content">
                     <div className="why__title">Earn citations for all non-traditional research artifacts</div>
                     <div className="why__text">
@@ -108,7 +113,7 @@ const Landing = () => {
                     <img src={why6} alt="Earn citations for all non-traditional research artifacts" />
                   </div>
                 </div>
-                <div className="why__list-item">
+                <div className="why__list-item"  data-aos="fade-up">
                   <div className="why__content">
                     <div className="why__title">Forget rank-order, and static citations</div>
                     <div className="why__text">
@@ -120,7 +125,7 @@ const Landing = () => {
                     <img src={why5} alt="Forget rank-order, and static citations" />
                   </div>
                 </div>
-                <div className="why__list-item">
+                <div className="why__list-item"  data-aos="fade-up">
                   <div className="why__content">
                     <div className="why__title">Permanent Archiving</div>
                     <div className="why__text">
@@ -132,7 +137,7 @@ const Landing = () => {
                     <img src={why4} alt="Permanent Archiving" />
                   </div>
                 </div>
-                <div className="why__list-item">
+                <div className="why__list-item"  data-aos="fade-up">
                   <div className="why__content">
                     <div className="why__title">100% Open Source</div>
                     <div className="why__text">
@@ -150,7 +155,7 @@ const Landing = () => {
               </div>
             </div>
           </section>
-          <section className="landing__institutes">
+          <section className="landing__institutes" data-aos="fade-up">
             <div className="container">
               <div className="institutes__title">
                 Authors from these institutions are in line for early access:
