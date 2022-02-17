@@ -79,6 +79,7 @@ const Landing = () => {
             //   </div>
             // </section>
           }
+          <HowItWorks />
           <section className="landing__why">
             <div className="container">
               <div className="landing__why-title">Why Rosetta</div>
@@ -167,7 +168,6 @@ const Landing = () => {
               </button>
             </div>
           </section>
-          <HowItWorks />
           {
 
             // <section className="landing__ownership">
