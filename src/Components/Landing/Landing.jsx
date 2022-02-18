@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import HowItWorks from "../HowItWorks";
+import Mission from "../Mission";
+import Benefits from "../Benefits";
 import harvardLogo from "../../images/logos/harvard.svg";
 import mitLogo from "../../images/logos/mit.png";
 import nusLogo from "../../images/logos/nus.png";
@@ -9,6 +11,8 @@ import oxfordLogo from "../../images/logos/oxweb.svg";
 import stanfordLogo from "../../images/logos/stanford.png";
 
 import demo from "../../images/demo.png";
+import demo2 from "../../images/demo2.png";
+import demo3 from "../../images/demo3.png";
 import { useHistory } from "react-router-dom";
 
 import why1 from "../../images/why/1.png";
@@ -36,8 +40,23 @@ const Landing = () => {
                       <button className="btn btn__primary" onClick={() => history.push("/start/")}>
                           Get Early Access
                       </button>
+                      <div className="hero__logos">
+                        <div className="hero__logos-title">
+                          Authors from these institutions are in line for early access:
+                        </div>
+                        <div className="hero__logos-list">
+                          <img src={oxfordLogo} alt="oxford" />
+                          <img src={harvardLogo} alt="harvard" />
+                          <img src={mitLogo} alt="mit" />
+                          <img src={nusLogo} alt="nus" />
+                          <img src={stanfordLogo} alt="stanford" />
+                          <img src={openaiLogo} alt="openai" />
+                        </div>
+                      </div>
                     </div>
                     <div className="hero__image">
+                      <img src={demo3} alt="Demo3" />
+                      <img src={demo2} alt="Demo2" />
                       <img src={demo} alt="Demo" />
                     </div>
                   </div>
@@ -66,28 +85,32 @@ const Landing = () => {
                   </div>
               </div>
           </section>
+          <HowItWorks />
           {
-            // <section className="landing__description">
-            //   <div className="container">
-            //     <div className="description">
-            //       <div className="description__title">The most powerful social platform for discovery, and distribution.</div>
-            //       <div className="description__text">
-            //         <p>Now you can earn by publishing open access replicable quality papers for free.</p>
-            //         <p>When you publish on Rosetta’s open access permissionless persistent repository, you create a market for your paper that you own, and earn the rewards based on it’s Impact.</p>
-            //       </div>
-            //       <div className="description__btn">
-            //         <button className="btn" onClick={() => history.push("/features/")}>
-            //             Learn more
-            //         </button>
-            //       </div>
+            // <section className="landing__institutes">
+            //   <div className="container" data-aos="fade-up">
+            //     <div className="institutes__title">
+            //       Authors from these institutions are in line for early access:
             //     </div>
+            //     <div className="institutes__logos">
+            //       <img src={oxfordLogo} alt="oxford" />
+            //       <img src={harvardLogo} alt="harvard" />
+            //       <img src={mitLogo} alt="mit" />
+            //       <img src={nusLogo} alt="nus" />
+            //       <img src={stanfordLogo} alt="stanford" />
+            //       <img src={openaiLogo} alt="openai" />
+            //     </div>
+            //     <button className="btn btn__primary" onClick={() => history.push("/start/")}>
+            //         Get Early Access
+            //     </button>
             //   </div>
             // </section>
           }
-          <HowItWorks />
+          <Mission />
+          <Benefits />
           <section className="landing__why">
             <div className="container">
-              <div className="landing__why-title">Why Rosetta</div>
+              <div className="landing__why-title" data-aos="fade-up">Why Rosetta</div>
               <div className="why__list">
                 <div className="why__list-item"  data-aos="fade-up">
                   <div className="why__content">
@@ -155,18 +178,10 @@ const Landing = () => {
               </div>
             </div>
           </section>
-          <section className="landing__institutes" data-aos="fade-up">
-            <div className="container">
+          <section className="landing__institutes">
+            <div className="container" data-aos="fade-up">
               <div className="institutes__title">
-                Authors from these institutions are in line for early access:
-              </div>
-              <div className="institutes__logos">
-                <img src={oxfordLogo} alt="oxford" />
-                <img src={harvardLogo} alt="harvard" />
-                <img src={mitLogo} alt="mit" />
-                <img src={nusLogo} alt="nus" />
-                <img src={stanfordLogo} alt="stanford" />
-                <img src={openaiLogo} alt="openai" />
+                Join to authors community and start to earn
               </div>
               <button className="btn btn__primary" onClick={() => history.push("/start/")}>
                   Get Early Access
@@ -174,7 +189,6 @@ const Landing = () => {
             </div>
           </section>
           {
-
             // <section className="landing__ownership">
             //   <div className="container">
             //     <div className="ownership__text">

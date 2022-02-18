@@ -579,17 +579,41 @@ a {
 }
 
 .hero__benefits {
-  flex: 1 0 40%;
-  max-width: 40%;
-}
-
-.hero__image {
   flex: 1 0 55%;
   max-width: 55%;
 }
 
+.hero__image {
+  flex: 1 0 40%;
+  max-width: 40%;
+  position: relative;
+  padding-top: 35%;
+}
+
 .hero__image img {
-  width: 100%;
+  width: calc(100% - 64px);
+  position: absolute;
+  border-radius: 16px;
+  box-shadow: 20px 60px 80px rgba(118, 118, 118, 0.1);
+}
+
+.hero__image img:hover {
+  z-index: 1;
+}
+
+.hero__image img:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.hero__image img:nth-child(2) {
+  top: 64px;
+  left: 32px;
+}
+
+.hero__image img:nth-child(3) {
+  top: 128px;
+  left: 64px;
 }
 
 .hero__title {
@@ -611,6 +635,73 @@ a {
   color: #fff;
   margin-bottom: 32px;
   opacity: 0.8;
+}
+
+.hero__logos {
+  margin-top: 128px;
+}
+
+.hero__logos-title {
+  margin-bottom: 32px;
+  opacity: 0.6;
+}
+
+.hero__logos-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero__logos-list img {
+  flex: 1 0 80px;
+  max-width: 80px;
+  margin-right: 32px;
+  filter: grayscale(1);
+}
+
+.hero__logos-list img:last-child {
+  margin-right: 0;
+}
+
+.hero__logos-list img[alt="oxford"],
+.hero__logos-list img[alt="standford"] {
+  max-width: 48px;
+}
+
+@media(max-width: 1024px) {
+  .hero {
+    padding: 64px 0 128px;
+  }
+
+  .hero__benefits {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero__image {
+    display: none;
+  }
+
+  .hero__logos {
+    margin-top: 64px
+  }
+
+  .hero__logos-list {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 767px) {
+  .hero__logos-list {
+    flex-wrap: wrap;
+  }
+
+  .hero__logos-list img {
+    flex: 1 0 30%;
+    max-width: 30%;
+    margin: 0 16px 16px;
+  }
 }
 
 .hero .two__btn {
@@ -980,50 +1071,67 @@ a {
 .landing__works-steps {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.landing__works-steps > svg {
+  width: 128px;
+  margin: 138px 16px;
 }
 
 .landing__works-step {
   width: 60%;
   padding: 48px 24px;
   border-radius: 16px;
+  text-align: center;
 }
 
 .landing__works-step:nth-of-type(2n) {
   margin-left: auto;
 }
 
-.landing__works-step-curve {
-  width: 40%;
-  height: auto;
-}
-
-.landing__works-step-curve:nth-of-type(2n) {
-  margin-right: 30%;
-  margin-left: auto;
-}
-
-.landing__works-step-curve:nth-of-type(2n + 1) {
-  margin-left: 30%;
-  margin-right: auto;
+.landing__works-step-icon {
+  margin-bottom: 32px;
 }
 
 .landing__works-step-title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 120%;
   color: #131416;
+  margin-bottom: 24px;
 }
 
 .landing__works-step-text {
+  font-family: "Inter";
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 160%;
   color: #7c7d8c;
-  margin: 16px auto 0;
+  margin: 0 auto;
+}
+
+@media(max-width: 1023px) {
+  .landing__works-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing__works-step {
+    width: 100%;
+    max-width: 480px;
+    padding: 24px;
+    margin: 0 auto;
+  }
+
+  .landing__works-steps > svg {
+    margin: 32px;
+    transform: rotate(90deg);
+  }
 }
 
 @media(max-width: 767px) {
@@ -1042,6 +1150,139 @@ a {
   .landing__works-step-curve:nth-of-type(2n + 1) {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.landing__mission {
+  padding: 48px 0 96px;
+  position: relative;
+  background-color: #131416;
+}
+
+.landing__mission:before {
+  content: '';
+  background-image: url('../images/blocks-bg.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.landing__mission-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 140%;
+  text-align: center;
+  color: #fff;
+  margin: 48px 0 48px;
+}
+
+.landing__mission-text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #B2B2B2;
+  max-width: 640px;
+  margin: 0 auto 24px;
+}
+
+.landing__benefits {
+  padding: 48px 0 96px;
+  position: relative;
+  background-color: #f4f4f4;
+}
+
+.landing__benefits-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 140%;
+  text-align: center;
+  color: #131416;
+  margin: 48px 0 48px;
+}
+
+.landing__benefits-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing__benefits-list {
+  flex: 1 0 50%;
+  max-width: 50%;
+}
+
+.landing__benefits-cta {
+  flex: 1 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 32px;
+  background: #fff;
+  box-shadow: 20px 60px 80px rgba(118, 118, 118, 0.1);
+  text-align: center;
+  border-radius: 16px;
+}
+
+.landing__benefits-cta-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #131416;
+  margin-bottom: 32px;
+}
+
+.landing__benefits-item {
+  margin-bottom: 48px;
+}
+
+.landing__benefits-item-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #131416;
+  margin-bottom: 16px;
+}
+
+.landing__benefits-item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #B2B2B2;
+}
+
+@media(max-width: 1024px) {
+  .landing__benefits-cta {
+    flex-basis: 45%;
+    max-width: 45%;
+  }
+}
+
+@media(max-width: 767px) {
+  .landing__benefits-grid {
+    flex-direction: column;
+  }
+
+  .landing__benefits-list {
+    max-width: 100%;
+  }
+
+  .landing__benefits-cta {
+    max-width: 100%;
   }
 }
 
@@ -1152,7 +1393,7 @@ a {
   font-family: Inter;
   letter-spacing: 0.004em;
   font-weight: normal;
-  margin-bottom: 8px;
+  margin-bottom: 32px;
 }
 
 .institutes__text {
