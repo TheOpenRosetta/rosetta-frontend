@@ -1,0 +1,61 @@
+{
+  "title": "Full Stack Smart Contract Engineer",
+  "p": [
+    "Rosetta is reimagining the future of open science. Today, we’re building the technology and team to create open markets for knowledge. We envision a future where scientists are free to experiment on the most pressing problems, and earn the rewards they deserve for it.",
+    "Our mission is to ensure all knowledge survives forever, which is why we’re building on Arweave. The goal of Rosetta is to build the world’s most compelling digital publishing network, whilst ensuring the scientific method survives forever on a persistent distributed protocol.",
+    "We’re the first incubation project from Hansa, a $10mm collective, so we’ve got the capital to take us far. ",
+    "We are seeking a Full Stack Engineer that is comfortable with SmartWeave SmartContracts.. They are a new kind of smart contract that can be written in languages such as Javascript. You won’t have experience with SmartWeave contracts, but we expect you to quickly learn, and read before applying.",
+    "As one of the first hires you’ll be responsible for building much of what our company will become, and take the lead of the development team.",
+    [{
+      "text": "Introducing SmartWeave: Building smart contracts with Arweave",
+      "link": "https://arweave.medium.com/introducing-smartweave-building-smart-contracts-with-arweave-1fc85cb3b632"
+    }, {
+      "text": "https://github.com/ArweaveTeam/SmartWeave",
+      "link": "https://github.com/ArweaveTeam/SmartWeave"
+    }, {
+      "text": "https://www.npmjs.com/package/redstone-smartweave",
+      "link": "https://www.npmjs.com/package/redstone-smartweave"
+    }],
+    "You’ll be expected to be comfortable learning new functions regularly to best achieve our goals, and learning new web3 concepts quickly such as decentralised autonomous organisations (DAO’s) that we’ll be using to decentralise science.",
+    "Take a look at our smart contracts, and github.",
+    [{
+      "text": "https://github.com/TheOpenRosetta",
+      "link": "https://github.com/TheOpenRosetta"
+    }, {
+      "text": "https://github.com/TheOpenRosetta/OpenRosettaSmartContract",
+      "link": "https://github.com/TheOpenRosetta/OpenRosettaSmartContract"
+    }]
+  ],
+  "who": [
+    "You like to build, and ship. Providing the best experience for all users. You have opinions, and can drive forward as a champion.",
+    "You are experienced. You’ve done it before. Your experience will help you avoid pitfalls, and help not only you, but the whole company move faster, and build better.",
+    "You thrive in fast paced environments. At this stage we’re still learning. You will iterate with customers, designers, and product managers on high impact work.",
+    "You take pride in your craftsmanship. Clean code, and design helps you and your colleagues move fast, and confidently.",
+    "You have empathy for customers. You build with the customer in mind."
+  ],
+  "do": [
+    "Drive the project forward by owning your deliverables, and ensuring collaboration with others.",
+    "Ensure the smart contracts are secure. This includes our governance, and mechanism designs.",
+    "Research, and think of new mechanisms for the protocol, as well as upgrading our current ones.",
+    "Implement, test, and audit open-source software that is used to interact with our on-chain smart contracts. We expect you to ship fast, and often.",
+    "Architect, and build products such as semantic search engines.",
+    "Drive decisions about Rosetta’s architecture, incentive structure, and features.",
+    "Design, implement, and test protocol upgrades.",
+    "Work on an open source codebase together with internal, and external contributors.",
+    "Prioritise scalability, security and ease of integration for our users."
+  ],
+  "have": [
+    "At least four years experience in software engineering using Javascript, NodeJS, Express, React, Typescript, and Redux preferred (but not essential).",
+    "Demonstrated passion for web3, and an open decentralised web.",
+    "Understanding of web3 chains, and protocols.",
+    "You have worked with smart contracts before (nice to have) that have held processed high dollar volumes, and deploying them to a public distributed network.",
+    "You have knowledge of past smart contracts exploits, and how to avoid them.",
+    "Passion for open science, distributed systems, crypto economic protocol design, game theory, and open markets.",
+    "Experience building, and maintaining RESTful APIs."
+  ],
+  "get": [
+    "120k - 200k base salary + $ROS tokens (based on experience).",
+    "Remote environment, or on-site in Melbourne, Australia.",
+    "Travel opportunities, and continuous learning."
+  ]
+}

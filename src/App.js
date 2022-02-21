@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Profile from "./pages/Profile";
 import Careers from "./pages/Careers";
+import Vacancy from "./pages/Vacancy";
 import PaperDetails from "./Components/PaperDetails/PaperDetails";
 import "aos/dist/aos.css";
 import { AuthorsProvider } from "./StateManagement/AuthorsContext";
@@ -46,6 +47,9 @@ function App() {
                             </Route>
                             <Route exact path="/careers">
                                 <Careers></Careers>
+                            </Route>
+                            <Route exact path="/careers/:role">
+                                <Vacancy></Vacancy>
                             </Route>
                             <Route exact path="/math">
                                 <Math />
