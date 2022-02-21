@@ -38,6 +38,12 @@ const Careers = () => {
                         <span className="careers__vacancies-item-text">Product Lead</span>
                       </Link>
                     </div>
+                    <div className="careers__vacancies-item">
+                      <Link to="/careers/head_of_open_science" className="careers__vacancies-link">
+                        <img src="/icons/unlock.svg" alt="Head of Open Science icon" className="careers__vacancies-item-img" />
+                        <span className="careers__vacancies-item-text">Head of Open Science</span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

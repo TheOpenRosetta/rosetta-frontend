@@ -637,8 +637,47 @@ a {
   opacity: 0.8;
 }
 
+.hero__list {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+}
+
+.hero__list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+@media(max-width: 1024px) {
+  .hero__list-item {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 767px) {
+  .hero__list-item {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.hero__list-item svg {
+  height: 24px;
+  max-width: 24px;
+  flex: 1 0 24px;
+  margin-right: 16px;
+}
+
+.hero__list-item svg path {
+  fill: #33BB6D;
+}
+
 .hero__logos {
-  margin-top: 128px;
+  margin-top: 64px;
 }
 
 .hero__logos-title {

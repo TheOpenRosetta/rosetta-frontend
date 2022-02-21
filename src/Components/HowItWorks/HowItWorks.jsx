@@ -20,24 +20,24 @@ const HowItWorks = () => {
             <div className="landing__works-step-icon">
               <CloudIcon />
             </div>
-            <div className="landing__works-step-title">Publish</div>
-            <div className="landing__works-step-text">1. Scientists can instantly publish a paper to Rosetta’s open access permissionless archive for free. Each published paper mints the co-authors a set of unique 'knowledge tokens', which receives supply of the native Rosetta token measured by the quality of the work.</div>
+            <div className="landing__works-step-title">1. Publish</div>
+            <div className="landing__works-step-text">Scientists can instantly publish a paper to Rosetta’s open access permissionless archive for free. Each published paper mints the co-authors a set of unique 'knowledge tokens', which receives supply of the native Rosetta token measured by the quality of the work.</div>
           </div>
           <ArrowRight />
           <div className="landing__works-step">
             <div className="landing__works-step-icon">
               <ReviewIcon />
             </div>
-            <div className="landing__works-step-title">Replicate</div>
-            <div className="landing__works-step-text">2. After publishing, a rewards pool forms to incentivise replication. Peer scientists replicate the authors work to ensure truthfulness, as well as adding discussion to it before they may publish elsewhere. Unlocking the ability for a distributed review, instead of closed doors peer-review.</div>
+            <div className="landing__works-step-title">2. Replicate</div>
+            <div className="landing__works-step-text">After publishing, a rewards pool forms to incentivise replication. Peer scientists replicate the authors work to ensure truthfulness, as well as adding discussion to it before they may publish elsewhere. Unlocking the ability for a distributed review from as many people that want to contribute, instead of small closed doors peer-review.</div>
           </div>
           <ArrowRight />
           <div className="landing__works-step">
             <div className="landing__works-step-icon">
               <PaidIcon />
             </div>
-            <div className="landing__works-step-title">Earn</div>
-            <div className="landing__works-step-text">3. The knowledge tokens can be traded on an open market at any time to allow the crowd to buy knowledge tokens in early in anticipation of quality citations, and thus a larger flow of rewards to the paper that unlocks novel quality & truth signals before citations accrue.</div>
+            <div className="landing__works-step-title">3. Earn</div>
+            <div className="landing__works-step-text">The knowledge tokens can be traded on an open market at any time to allow the crowd to buy the knowledge tokens in early anticipation of quality citations, and thus a larger flow of rewards to the paper that unlocks novel quality & truth signals before citations accrue.</div>
           </div>
         </div>
       </div>

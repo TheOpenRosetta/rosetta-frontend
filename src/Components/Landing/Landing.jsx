@@ -22,6 +22,7 @@ import why4 from "../../images/why/4.png";
 import why5 from "../../images/why/5.png";
 import why6 from "../../images/why/6.png";
 
+import {ReactComponent as DoneIcon} from "../../images/icons/done.svg";
 
 const Landing = () => {
     let history = useHistory();
@@ -36,7 +37,25 @@ const Landing = () => {
                   <div className="hero__row">
                     <div className="hero__benefits">
                       <div className="hero__title">There’s now a better way to publish pre-prints open access for free</div>
-                      <div className="hero__text">Earn rewards worth real money through open markets for knowledge. Instant free open access publishing with zero gatekeepers. Permanent archiving. Zero rank order. Weighted citations. Incentivised replication for falsification through time.</div>
+                      <div className="hero__text">Now any scientist can earn rewards worth real money with open markets for knowledge when you publish on Rosetta's repository. With the average paper earning $1,000 p.a.</div>
+                      <ul className="hero__list">
+                        <li className="hero__list-item">
+                          <DoneIcon />
+                          Instant free open access publishing with zero gatekeepers.
+                        </li>
+                        <li className="hero__list-item">
+                          <DoneIcon />
+                          Permanent archiving.
+                        </li>
+                        <li className="hero__list-item">
+                          <DoneIcon />
+                          Zero rank order, and weighted citations.
+                        </li>
+                        <li className="hero__list-item">
+                          <DoneIcon />
+                          Incentivised replication for falsification through time
+                        </li>
+                      </ul>
                       <button className="btn btn__primary" onClick={() => history.push("/start/")}>
                           Get Early Access
                       </button>
@@ -181,7 +200,7 @@ const Landing = () => {
           <section className="landing__institutes">
             <div className="container" data-aos="fade-up">
               <div className="institutes__title">
-                Join to authors community and start to earn
+                Join our community, and claim your rewards
               </div>
               <button className="btn btn__primary" onClick={() => history.push("/start/")}>
                   Get Early Access
