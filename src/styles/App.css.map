@@ -42,7 +42,8 @@
         "../Components/Pagination/_pagination.scss",
         "../Components/OnBoarding/VerifyPapers/_verifyPapers.scss",
         "../Components/Spread/_spread.scss",
-        "../Components/AuthorPage/_authorPage.scss"
+        "../Components/AuthorPage/_authorPage.scss",
+        "../Components/AllPagesPDFViewer/_allPagesPDFViewer.scss"
     ],
     "names": [],
     "file": "App.css"
