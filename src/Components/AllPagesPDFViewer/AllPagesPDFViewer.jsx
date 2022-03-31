@@ -29,7 +29,7 @@ const AllPagesPDFViewer = ({ pdf }) => {
         <>
             <div className="all-page-container">
                 <Document
-                    file="https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"
+                    file={pdf}
                     options={{ workerSrc: "/pdf.worker.js" }}
                     onLoadSuccess={onDocumentLoadSuccess}
                 >
