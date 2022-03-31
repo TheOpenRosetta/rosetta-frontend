@@ -3,8 +3,61 @@
     height: 100%;
     max-height: 500px;
     overflow: auto;
-    background-color: #ccc;
+    background-color: rgba(61, 56, 56, 0.52);
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 0 15px rgb(223, 223, 223);
+    &::-webkit-scrollbar-thumb {
+        background-color: lightgray;
+        margin-right: 5px;
+    }
     .react-pdf__Page {
+        padding-bottom: 0.1rem;
+    }
+    .react-pdf__Page:last-child {
         text-align: center !important;
+        padding-bottom: 3rem;
+    }
+}
+.all-page-container-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 1rem;
+    bottom: 20px;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+    background-color: rgb(37, 37, 37);
+    & > span {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.774);
+    }
+    .pdf-page {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 17px;
+        left: 50%;
+        transform: translateX(-50%);
+        & > span {
+            display: grid;
+            place-items: center;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-right: 3px;
+            background-color: rgb(88, 88, 88);
+        }
+    }
+    .zoom-feature {
+        display: flex;
+        gap: 5px;
+        & > span {
+            cursor: pointer;
+        }
     }
 }

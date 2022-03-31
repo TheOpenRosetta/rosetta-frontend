@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../../../images/comments1.png";
 import img2 from "../../../images/comments2.png";
 import samplePDF from "../../../test.pdf";
-import AllPagesPDFViewer from '../../AllPagesPDFViewer/AllPagesPDFViewer';
+import AllPagesPDFViewer from "../../AllPagesPDFViewer/AllPagesPDFViewer";
 const PaperBody = () => {
     return (
         <div className="paperBody container">
