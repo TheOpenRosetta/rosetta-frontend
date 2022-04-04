@@ -1,5 +1,5 @@
 import React from "react";
-import samplePDF from "../../../assets/yellow-paper.pdf";
+import samplePDF from "../../../assets/Fair_Forks.pdf";
 import img1 from "../../../images/comments1.png";
 import img2 from "../../../images/comments2.png";
 import AllPagesPDFViewer from "../../AllPagesPDFViewer/AllPagesPDFViewer";

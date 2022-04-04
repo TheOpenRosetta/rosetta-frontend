@@ -4970,3 +4970,7 @@ a {
   justify-content: center;
   margin: 64px auto;
 }
+
+.linkAnnotation {
+  display: none !important;
+}
