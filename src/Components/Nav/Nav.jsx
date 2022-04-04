@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/ROSETTA.svg";
 import search from "../../images/search-normal.svg";
+import { useHistory } from "react-router-dom";
 const Nav = ({ show }) => {
     const [burger, setBurger] = useState(false);
+    let history = useHistory();
     return (
         <nav className="nav">
             <div className="container">
@@ -31,6 +33,7 @@ const Nav = ({ show }) => {
                           <button>Create Free Account</button>
                       ) : (
                           <>
+                              <button onClick={() => history.push("/paper-details")}>Single Page</button>
                               <button>
                                   <a href="https://rosetta-2.gitbook.io/rosetta-docs/">
                                       Docs

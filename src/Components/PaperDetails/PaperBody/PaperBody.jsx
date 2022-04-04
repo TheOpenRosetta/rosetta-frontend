@@ -36,17 +36,17 @@ const PaperBody = () => {
 export default PaperBody;
 
 export const comments = [
-  {
-    img: img1,
-    name: "Albert Einstein",
-    comment:
-      "How does this effect my theory on the relativity of space, and time?",
-    date: "Today 11:23",
-  },
-  {
-    img: img2,
-    name: "Ivan Uemlianin",
-    comment: "Falsifies it, sir. ",
-    date: "Today 11:23",
-  },
+  // {
+  //   img: img1,
+  //   name: "Albert Einstein",
+  //   comment:
+  //     "How does this effect my theory on the relativity of space, and time?",
+  //   date: "Today 11:23",
+  // },
+  // {
+  //   img: img2,
+  //   name: "Ivan Uemlianin",
+  //   comment: "Falsifies it, sir. ",
+  //   date: "Today 11:23",
+  // },
 ];

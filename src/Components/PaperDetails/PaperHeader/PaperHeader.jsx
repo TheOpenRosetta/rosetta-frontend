@@ -18,17 +18,12 @@ const PaperHeader = () => {
         <div className="paper__header">
             <div className="container">
                 <div className="paper__header__wrapper">
-                    <p className="text">Aug- 31- 2021</p>
+                    <p className="text">March 15, 2022</p>
                     <h1>
-                        Arweave: A Protocol for Economically Sustainable
-                        Information Permanence
+                        Arweave: Fair Forks Incentivize Protocol Rejuvenation
                     </h1>
                     <p className="text-info">
-                        By Sam Williams, Viktor Diordiiev, Lev Berman, India
-                        Raybould, Ivan Uemlianin
-                    </p>
-                    <p className="version">
-                        V1.1 <Link to="/"> (See previous versions)</Link>
+                        By Sam Williams, Abhav Kedia
                     </p>
                     <div className="header__bottom__wrapper">
                         <div className="header__links__wrapper">
