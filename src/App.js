@@ -20,70 +20,66 @@ import FAQPage from "./Components/FAQPage/FAQPage";
 import Spread from "./Components/Spread/Spread";
 import AuthorPage from "./Components/AuthorPage/AuthorPage";
 function App() {
-    const theme = createTheme({
-        palette: {
-            primary: {
-                main: "#B68E5C",
-            },
-        },
-    });
-    return (
-        <div className="App">
-            <AuthorsProvider>
-                <ThemeProvider theme={theme}>
-                    <Router>
-                        <ScrollToTop></ScrollToTop>
-                        <Switch>
-                            <Route exact path="/profile/:id/:name">
-                                <Profile></Profile>
-                            </Route>
-                            <Route
-                                exact
-                                path="/paper-details"
-                                component={PaperDetails}
-                            />
-                            <Route exact path="/">
-                                <Homepage></Homepage>
-                            </Route>
-                            <Route exact path="/careers">
-                                <Careers></Careers>
-                            </Route>
-                            <Route exact path="/careers/:role">
-                                <Vacancy></Vacancy>
-                            </Route>
-                            <Route exact path="/math">
-                                <Math />
-                            </Route>
-                            <Route exact path="/features/">
-                                <Feature />
-                            </Route>
-                            <Route exact path="/about/">
-                                <About></About>
-                            </Route>
-                            <Route exact path="/faq/">
-                                <FAQPage></FAQPage>
-                            </Route>
-                            <Route exact path="/start/">
-                                <OnBoarding></OnBoarding>
-                            </Route>
-                            <Route exact path="/spread/">
-                                <Spread></Spread>
-                            </Route>
-                            <Route exact path="/authors/">
-                                <AuthorPage></AuthorPage>
-                            </Route>
-                            <Route exact path="/verify-identity/">
-                                <VerifyIdentity></VerifyIdentity>
-                            </Route>
-                            <Route exact path="/developers/">
-                                <Developers></Developers>
-                            </Route>
-                        </Switch>
-                    </Router>
-                </ThemeProvider>
-            </AuthorsProvider>
-        </div>
-    );
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: "#B68E5C",
+      },
+    },
+  });
+  return (
+    <div className="App">
+      <AuthorsProvider>
+        <ThemeProvider theme={theme}>
+          <Router>
+            <ScrollToTop></ScrollToTop>
+            <Switch>
+              <Route exact path="/profile/:id/:name">
+                <Profile></Profile>
+              </Route>
+              <Route exact path="/paper-details" component={PaperDetails} />
+              <Route exact path="/">
+                <Homepage></Homepage>
+              </Route>
+              <Route exact path="/careers">
+                <Careers></Careers>
+              </Route>
+              <Route exact path="/careers/:role">
+                <Vacancy></Vacancy>
+              </Route>
+              <Route exact path="/math">
+                <Math />
+              </Route>
+              <Route exact path="/features/">
+                <Feature />
+              </Route>
+              <Route exact path="/about/">
+                <About></About>
+              </Route>
+              <Route exact path="/faq/">
+                <FAQPage></FAQPage>
+              </Route>
+              <Route exact path="/start/">
+                <OnBoarding></OnBoarding>
+              </Route>
+              <Route exact path="/spread/">
+                <Spread></Spread>
+              </Route>
+              <Route exact path="/authors/">
+                <AuthorPage></AuthorPage>
+              </Route>
+              <Route exact path="/verify-identity/">
+                <VerifyIdentity></VerifyIdentity>
+              </Route>
+              <Route exact path="/developers/">
+                <Developers></Developers>
+              </Route>
+            </Switch>
+          </Router>
+        </ThemeProvider>
+      </AuthorsProvider>
+    </div>
+  );
 }
 
 export default App;
