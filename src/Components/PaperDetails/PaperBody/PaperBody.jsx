@@ -10,7 +10,7 @@ const PaperBody = () => {
       <div className="paperBody__left">
         <AllPagesPDFViewer pdf={samplePDF} />
       </div>
-      <div className="paperBody__right">
+      {/* <div className="paperBody__right">
         <div>
           <p>Comments</p>
         </div>
@@ -28,7 +28,7 @@ const PaperBody = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
