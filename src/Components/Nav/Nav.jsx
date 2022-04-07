@@ -33,7 +33,6 @@ const Nav = ({ show }) => {
                           <button>Create Free Account</button>
                       ) : (
                           <>
-                              <button onClick={() => history.push("/paper-details")}>Single Page</button>
                               <button>
                                   <a href="https://rosetta-2.gitbook.io/rosetta-docs/">
                                       Docs
